@@ -1,0 +1,6 @@
+prefix: '/rests'
+methods:
+  get:
+    '*': run
+  post:
+    '*': run

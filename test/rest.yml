@@ -1,0 +1,25 @@
+prefix: '/rest'
+methods:
+  get:
+    '/test': test
+    '/model': model
+    '/list': list
+    '/:key/:id': retrieve
+    '/get/:id': get
+    '/': disable
+  post:
+    '/create': create
+    '/query': query
+    '/count': count
+    '/': create
+    '/*': disable
+  put:
+    '/:id': update
+    '/': update
+  delete:
+    '/:id': delete
+    '/': update
+  options:
+    '*': pass
+  all:
+#    '*': disable

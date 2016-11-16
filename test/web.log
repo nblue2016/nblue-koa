@@ -1,21 +1,501 @@
-[Verbose] 11/15/2016 22:31:56: /test.html (GET, 200, :8ms)
-[Verbose] 11/15/2016 22:31:56: /test.html (GET, 200, :2ms)
-[Verbose] 11/15/2016 22:31:56: /test.html (GET, 200, :1ms)
-[Verbose] 11/15/2016 22:31:58: /css/test.css (GET, 200, :0ms)
-[Verbose] 11/15/2016 22:31:58: /css/test.css (GET, 200, :1ms)
-[Verbose] 11/15/2016 22:31:59: /css/test.css (GET, 200, :0ms)
-[Verbose] 11/15/2016 22:32:00: /test (GET, 200, :2ms)
-[Verbose] 11/15/2016 22:32:01: /test (GET, 200, :0ms)
-[Verbose] 11/15/2016 22:34:11: /test (GET, 200, :8ms)
-[Verbose] 11/15/2016 22:34:12: /test (GET, 200, :1ms)
-[Verbose] 11/15/2016 22:34:12: /test (GET, 200, :1ms)
-[Verbose] 11/15/2016 22:34:15: /test.html (GET, 200, :1ms)
-[Verbose] 11/15/2016 22:34:15: /test.html (GET, 200, :1ms)
-[Verbose] 11/15/2016 22:44:57: /test.html (GET, 200, :8ms)
-[Verbose] 11/15/2016 22:44:57: /test.html (GET, 200, :1ms)
-[Verbose] 11/15/2016 22:44:57: /test.html (GET, 200, :1ms)
-[Verbose] 11/15/2016 22:44:59: /css/test.css (GET, 200, :1ms)
-[Verbose] 11/15/2016 22:44:59: /css/test.css (GET, 200, :1ms)
-[Verbose] 11/15/2016 22:44:59: /css/test.css (GET, 200, :0ms)
-[Verbose] 11/15/2016 22:45:00: /test (GET, 200, :0ms)
-[Verbose] 11/15/2016 22:45:01: /test (GET, 200, :1ms)
+[Info] 11/16/2016 17:35:58: start web services on 8088
+[Verbose] 11/16/2016 17:36:02: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:36:02: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:36:02: parsed schemas files.
+[Verbose] 11/16/2016 17:36:02: created db connections.
+[Info] 11/16/2016 17:36:02: found config.
+[Info] 11/16/2016 17:36:02: found logger.
+[Info] 11/16/2016 17:36:02: found connections
+[Verbose] 11/16/2016 17:36:02: /test (GET, 200, :22ms)
+[Info] 11/16/2016 17:36:07: found config.
+[Info] 11/16/2016 17:36:07: found logger.
+[Info] 11/16/2016 17:36:07: found connections
+[Verbose] 11/16/2016 17:36:07: /users/ (GET, 200, :10ms)
+[Verbose] 11/16/2016 17:47:44: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:47:44: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Info] 11/16/2016 17:47:44: start web services on 8088
+[Verbose] 11/16/2016 17:47:44: created db connections.
+[Verbose] 11/16/2016 17:47:44: parsed schemas files.
+[Verbose] 11/16/2016 17:48:10: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:48:10: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:48:10: parsed schemas files.
+[Verbose] 11/16/2016 17:48:10: created db connections.
+[Info] 11/16/2016 17:48:10: start web services on 8088
+[Verbose] 11/16/2016 17:48:24: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:48:24: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:48:24: parsed schemas files.
+[Verbose] 11/16/2016 17:48:24: created db connections.
+[Verbose] 11/16/2016 17:49:19: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:49:19: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:49:19: created db connections.
+[Verbose] 11/16/2016 17:49:19: parsed schemas files.
+[Verbose] 11/16/2016 17:49:53: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:49:53: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:49:53: created db connections.
+[Verbose] 11/16/2016 17:49:53: parsed schemas files.
+[Verbose] 11/16/2016 17:49:59: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:49:59: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:49:59: created db connections.
+[Verbose] 11/16/2016 17:49:59: parsed schemas files.
+[Verbose] 11/16/2016 17:50:13: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:50:13: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:50:13: created db connections.
+[Verbose] 11/16/2016 17:50:13: parsed schemas files.
+[Verbose] 11/16/2016 17:50:23: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:50:23: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:50:23: parsed schemas files.
+[Verbose] 11/16/2016 17:50:23: created db connections.
+[Verbose] 11/16/2016 17:50:36: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:50:36: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:50:36: parsed schemas files.
+[Verbose] 11/16/2016 17:50:36: created db connections.
+[Verbose] 11/16/2016 17:51:15: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:51:15: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:51:15: parsed schemas files.
+[Verbose] 11/16/2016 17:51:15: created db connections.
+[Verbose] 11/16/2016 17:52:32: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:52:32: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:52:32: parsed schemas files.
+[Verbose] 11/16/2016 17:52:32: created db connections.
+[Verbose] 11/16/2016 17:52:49: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:52:49: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:52:49: created db connections.
+[Verbose] 11/16/2016 17:52:49: parsed schemas files.
+[Verbose] 11/16/2016 17:53:06: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:53:06: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:53:06: created db connections.
+[Verbose] 11/16/2016 17:53:06: parsed schemas files.
+[Verbose] 11/16/2016 17:53:16: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:53:16: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:53:16: parsed schemas files.
+[Verbose] 11/16/2016 17:53:16: created db connections.
+[Verbose] 11/16/2016 17:53:33: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:53:33: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:53:33: created db connections.
+[Verbose] 11/16/2016 17:53:33: parsed schemas files.
+[Verbose] 11/16/2016 17:54:40: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:54:40: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:54:40: parsed schemas files.
+[Verbose] 11/16/2016 17:54:40: created db connections.
+[Verbose] 11/16/2016 17:54:59: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:54:59: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:54:59: parsed schemas files.
+[Verbose] 11/16/2016 17:54:59: created db connections.
+[Verbose] 11/16/2016 17:55:14: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:55:14: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:55:14: parsed schemas files.
+[Verbose] 11/16/2016 17:55:14: created db connections.
+[Verbose] 11/16/2016 17:55:32: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:55:32: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:55:32: parsed schemas files.
+[Verbose] 11/16/2016 17:55:32: created db connections.
+[Verbose] 11/16/2016 17:56:41: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:56:41: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:56:41: parsed schemas files.
+[Verbose] 11/16/2016 17:56:41: created db connections.
+[Verbose] 11/16/2016 17:57:04: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:57:04: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:57:04: parsed schemas files.
+[Verbose] 11/16/2016 17:57:04: created db connections.
+[Verbose] 11/16/2016 17:57:19: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:57:19: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:57:19: parsed schemas files.
+[Verbose] 11/16/2016 17:57:20: created db connections.
+[Verbose] 11/16/2016 17:57:52: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:57:52: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:57:52: parsed schemas files.
+[Verbose] 11/16/2016 17:57:52: created db connections.
+[Verbose] 11/16/2016 17:58:31: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:58:31: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:58:31: created db connections.
+[Verbose] 11/16/2016 17:58:31: parsed schemas files.
+[Verbose] 11/16/2016 17:59:12: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:59:12: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:59:12: parsed schemas files.
+[Verbose] 11/16/2016 17:59:12: created db connections.
+[Verbose] 11/16/2016 17:59:28: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:59:28: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:59:28: created db connections.
+[Verbose] 11/16/2016 17:59:28: parsed schemas files.
+[Verbose] 11/16/2016 17:59:40: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 17:59:40: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 17:59:40: parsed schemas files.
+[Verbose] 11/16/2016 17:59:40: created db connections.
+[Verbose] 11/16/2016 18:00:12: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:00:12: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:00:12: created db connections.
+[Verbose] 11/16/2016 18:00:12: parsed schemas files.
+[Verbose] 11/16/2016 18:00:41: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:00:41: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:00:41: parsed schemas files.
+[Verbose] 11/16/2016 18:00:41: created db connections.
+[Verbose] 11/16/2016 18:01:01: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:01:01: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:01:01: parsed schemas files.
+[Verbose] 11/16/2016 18:01:01: created db connections.
+[Verbose] 11/16/2016 18:01:14: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:01:14: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:01:14: parsed schemas files.
+[Verbose] 11/16/2016 18:01:14: created db connections.
+[Verbose] 11/16/2016 18:02:35: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:02:35: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:02:35: parsed schemas files.
+[Verbose] 11/16/2016 18:02:35: created db connections.
+[Verbose] 11/16/2016 18:03:04: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:03:04: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:03:04: created db connections.
+[Verbose] 11/16/2016 18:03:04: parsed schemas files.
+[Info] 11/16/2016 18:03:04: start web services on 8088
+[Verbose] 11/16/2016 18:03:57: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:03:57: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:03:57: created db connections.
+[Verbose] 11/16/2016 18:03:57: parsed schemas files.
+[Info] 11/16/2016 18:03:57: start web services on 8088
+[Info] 11/16/2016 18:04:04: found config.
+[Info] 11/16/2016 18:04:04: found logger.
+[Info] 11/16/2016 18:04:04: found connections
+[Verbose] 11/16/2016 18:04:04: /users/ (GET, 200, :9ms)
+[Info] 11/16/2016 18:04:08: found config.
+[Info] 11/16/2016 18:04:08: found logger.
+[Info] 11/16/2016 18:04:08: found connections
+[Verbose] 11/16/2016 18:04:08: /rest/users/ (GET, 200, :3ms)
+[Info] 11/16/2016 18:04:12: found logger.
+[Info] 11/16/2016 18:04:12: found config.
+[Verbose] 11/16/2016 18:04:12: /rest/users/ (GET, 200, :1ms)
+[Info] 11/16/2016 18:04:12: found connections
+[Info] 11/16/2016 18:04:13: found logger.
+[Info] 11/16/2016 18:04:13: found config.
+[Info] 11/16/2016 18:04:13: found connections
+[Verbose] 11/16/2016 18:04:13: /rest/post/3434?test (GET, 200, :2ms)
+[Info] 11/16/2016 18:04:15: found config.
+[Info] 11/16/2016 18:04:15: found logger.
+[Info] 11/16/2016 18:04:15: found connections
+[Verbose] 11/16/2016 18:04:15: /rest/post/3434?test (GET, 200, :2ms)
+[Verbose] 11/16/2016 18:06:52: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:06:52: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:06:52: parsed schemas files.
+[Verbose] 11/16/2016 18:06:52: created db connections.
+[Info] 11/16/2016 18:06:52: start web services on 8088
+[Info] 11/16/2016 18:06:54: found config.
+[Info] 11/16/2016 18:06:54: found connections
+[Info] 11/16/2016 18:06:54: found logger.
+[Verbose] 11/16/2016 18:06:54: /rest/post/3434?test (GET, 200, :9ms)
+[Info] 11/16/2016 18:07:10: found config.
+[Info] 11/16/2016 18:07:10: found logger.
+[Info] 11/16/2016 18:07:10: found connections
+[Verbose] 11/16/2016 18:07:10: /rest/post/test (GET, 200, :10ms)
+[Verbose] 11/16/2016 18:07:52: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:07:52: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:07:52: parsed schemas files.
+[Verbose] 11/16/2016 18:07:52: created db connections.
+[Info] 11/16/2016 18:07:53: start web services on 8088
+[Verbose] 11/16/2016 18:09:16: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:09:16: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:09:16: parsed schemas files.
+[Verbose] 11/16/2016 18:09:16: created db connections.
+[Info] 11/16/2016 18:09:16: start web services on 8088
+[Verbose] 11/16/2016 18:09:21: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:09:21: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:09:21: parsed schemas files.
+[Verbose] 11/16/2016 18:09:21: created db connections.
+[Info] 11/16/2016 18:09:21: start web services on 8088
+[Info] 11/16/2016 18:09:27: found config.
+[Info] 11/16/2016 18:09:27: found logger.
+[Info] 11/16/2016 18:09:27: found connections
+[Verbose] 11/16/2016 18:09:27: /rest/post/test (GET, 200, :11ms)
+[Verbose] 11/16/2016 18:10:02: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:10:02: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:10:02: created db connections.
+[Verbose] 11/16/2016 18:10:02: parsed schemas files.
+[Info] 11/16/2016 18:10:02: start web services on 8088
+[Verbose] 11/16/2016 18:10:28: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:10:28: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:10:28: created db connections.
+[Verbose] 11/16/2016 18:10:28: parsed schemas files.
+[Info] 11/16/2016 18:10:28: start web services on 8088
+[Info] 11/16/2016 18:10:30: found logger.
+[Info] 11/16/2016 18:10:30: found config.
+[Info] 11/16/2016 18:10:30: found connections
+[Verbose] 11/16/2016 18:10:30: /rest/post/test (GET, 200, :14ms)
+[Info] 11/16/2016 18:10:37: found config.
+[Info] 11/16/2016 18:10:37: found logger.
+[Info] 11/16/2016 18:10:37: found connections
+[Verbose] 11/16/2016 18:10:37: /rest/post/test (GET, 200, :9ms)
+[Verbose] 11/16/2016 18:11:21: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:11:21: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:11:21: created db connections.
+[Verbose] 11/16/2016 18:11:21: parsed schemas files.
+[Info] 11/16/2016 18:11:21: start web services on 8088
+[Verbose] 11/16/2016 18:12:32: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:12:32: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:12:32: created db connections.
+[Verbose] 11/16/2016 18:12:32: parsed schemas files.
+[Info] 11/16/2016 18:12:32: start web services on 8088
+[Info] 11/16/2016 18:12:37: found config.
+[Info] 11/16/2016 18:12:37: found logger.
+[Info] 11/16/2016 18:12:37: found connections
+[Verbose] 11/16/2016 18:12:37: /rest/post/test (GET, 200, :9ms)
+[Info] 11/16/2016 18:12:41: found config.
+[Info] 11/16/2016 18:12:41: found logger.
+[Info] 11/16/2016 18:12:41: found connections
+[Verbose] 11/16/2016 18:12:41: /rest/post/test (GET, 200, :5ms)
+[Verbose] 11/16/2016 18:13:09: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:13:09: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:13:09: parsed schemas files.
+[Verbose] 11/16/2016 18:13:09: created db connections.
+[Info] 11/16/2016 18:13:09: start web services on 8088
+[Info] 11/16/2016 18:13:10: found config.
+[Info] 11/16/2016 18:13:10: found logger.
+[Info] 11/16/2016 18:13:10: found connections
+[Verbose] 11/16/2016 18:13:10: /rest/post/test (GET, 200, :11ms)
+[Info] 11/16/2016 18:13:15: found config.
+[Info] 11/16/2016 18:13:15: found logger.
+[Info] 11/16/2016 18:13:15: found connections
+[Verbose] 11/16/2016 18:13:15: /rest/post/test (GET, 200, :5ms)
+[Info] 11/16/2016 18:13:16: found logger.
+[Info] 11/16/2016 18:13:16: found config.
+[Info] 11/16/2016 18:13:16: found connections
+[Verbose] 11/16/2016 18:13:16: /rest/post/3434?test (GET, 200, :2ms)
+[Info] 11/16/2016 18:13:17: found config.
+[Info] 11/16/2016 18:13:17: found logger.
+[Info] 11/16/2016 18:13:17: found connections
+[Verbose] 11/16/2016 18:13:17: /rest/users/ (GET, 200, :5ms)
+[Info] 11/16/2016 18:13:20: found config.
+[Info] 11/16/2016 18:13:20: found logger.
+[Info] 11/16/2016 18:13:20: found connections
+[Verbose] 11/16/2016 18:13:20: /rest/user/test (GET, 200, :1ms)
+[Info] 11/16/2016 18:13:58: found config.
+[Info] 11/16/2016 18:13:58: found logger.
+[Info] 11/16/2016 18:13:58: found connections
+[Verbose] 11/16/2016 18:13:58: /rest/user/test (GET, 200, :1ms)
+[Info] 11/16/2016 18:14:00: found config.
+[Info] 11/16/2016 18:14:00: found logger.
+[Info] 11/16/2016 18:14:00: found connections
+[Verbose] 11/16/2016 18:14:00: /rest/user/create (GET, 200, :2ms)
+[Info] 11/16/2016 18:14:02: found config.
+[Info] 11/16/2016 18:14:02: found connections
+[Info] 11/16/2016 18:14:02: found logger.
+[Verbose] 11/16/2016 18:14:02: /rest/user/create (GET, 200, :2ms)
+[Verbose] 11/16/2016 18:14:19: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:14:19: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:14:19: parsed schemas files.
+[Verbose] 11/16/2016 18:14:19: created db connections.
+[Info] 11/16/2016 18:14:19: start web services on 8088
+[Verbose] 11/16/2016 18:15:03: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:15:03: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:15:03: created db connections.
+[Verbose] 11/16/2016 18:15:03: parsed schemas files.
+[Info] 11/16/2016 18:15:03: start web services on 8088
+[Info] 11/16/2016 18:15:06: found config.
+[Info] 11/16/2016 18:15:06: found logger.
+[Info] 11/16/2016 18:15:06: found connections
+[Verbose] 11/16/2016 18:15:06: /rest/user/create (GET, 200, :10ms)
+[Verbose] 11/16/2016 18:16:05: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:16:05: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:16:05: parsed schemas files.
+[Verbose] 11/16/2016 18:16:05: created db connections.
+[Info] 11/16/2016 18:16:05: start web services on 8088
+[Verbose] 11/16/2016 18:16:28: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:16:28: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:16:28: parsed schemas files.
+[Verbose] 11/16/2016 18:16:28: created db connections.
+[Info] 11/16/2016 18:16:28: start web services on 8088
+[Info] 11/16/2016 18:16:31: found config.
+[Info] 11/16/2016 18:16:31: found logger.
+[Info] 11/16/2016 18:16:31: found connections
+[Verbose] 11/16/2016 18:16:31: /rest/user/create (GET, 200, :13ms)
+[Info] 11/16/2016 18:16:32: found config.
+[Info] 11/16/2016 18:16:32: found logger.
+[Info] 11/16/2016 18:16:32: found connections
+[Verbose] 11/16/2016 18:16:32: /rest/user/create (GET, 200, :5ms)
+[Info] 11/16/2016 18:16:33: found config.
+[Info] 11/16/2016 18:16:33: found logger.
+[Info] 11/16/2016 18:16:33: found connections
+[Verbose] 11/16/2016 18:16:33: /rest/user/create (GET, 200, :1ms)
+[Verbose] 11/16/2016 18:16:53: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:16:53: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:16:53: parsed schemas files.
+[Verbose] 11/16/2016 18:16:53: created db connections.
+[Info] 11/16/2016 18:16:53: start web services on 8088
+[Info] 11/16/2016 18:16:54: found logger.
+[Info] 11/16/2016 18:16:54: found config.
+[Info] 11/16/2016 18:16:54: found connections
+[Verbose] 11/16/2016 18:16:54: /rest/user/create (GET, 200, :9ms)
+[Info] 11/16/2016 18:16:56: found config.
+[Info] 11/16/2016 18:16:56: found logger.
+[Info] 11/16/2016 18:16:56: found connections
+[Verbose] 11/16/2016 18:16:56: /rest/user/create (GET, 200, :2ms)
+[Verbose] 11/16/2016 18:18:10: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:18:10: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:18:10: parsed schemas files.
+[Verbose] 11/16/2016 18:18:10: created db connections.
+[Info] 11/16/2016 18:18:10: start web services on 8088
+[Info] 11/16/2016 18:18:12: found config.
+[Info] 11/16/2016 18:18:12: found logger.
+[Info] 11/16/2016 18:18:12: found connections
+[Verbose] 11/16/2016 18:18:12: /rest/user/create (GET, 200, :10ms)
+[Verbose] 11/16/2016 18:18:41: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 18:18:41: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 18:18:41: parsed schemas files.
+[Verbose] 11/16/2016 18:18:41: created db connections.
+[Info] 11/16/2016 18:18:41: start web services on 8088
+[Info] 11/16/2016 18:18:42: found config.
+[Info] 11/16/2016 18:18:42: found logger.
+[Info] 11/16/2016 18:18:42: found connections
+[Verbose] 11/16/2016 18:18:42: /rest/user/create (GET, 200, :10ms)
+[Info] 11/16/2016 18:19:04: found config.
+[Info] 11/16/2016 18:19:04: found logger.
+[Info] 11/16/2016 18:19:04: found connections
+[Verbose] 11/16/2016 18:19:04: /rest/user/create (GET, 200, :7ms)
+[Info] 11/16/2016 18:19:05: found config.
+[Info] 11/16/2016 18:19:05: found logger.
+[Info] 11/16/2016 18:19:05: found connections
+[Verbose] 11/16/2016 18:19:05: /rest/user/create (GET, 200, :2ms)
+[Info] 11/16/2016 18:19:05: found logger.
+[Info] 11/16/2016 18:19:05: found config.
+[Verbose] 11/16/2016 18:19:05: /rest/user/test (GET, 200, :2ms)
+[Info] 11/16/2016 18:19:05: found connections
+[Info] 11/16/2016 18:19:06: found config.
+[Info] 11/16/2016 18:19:06: found logger.
+[Info] 11/16/2016 18:19:06: found connections
+[Verbose] 11/16/2016 18:19:06: /rest/user/test (GET, 200, :9ms)
+[Info] 11/16/2016 18:19:14: found config.
+[Info] 11/16/2016 18:19:14: found logger.
+[Info] 11/16/2016 18:19:14: found connections
+[Verbose] 11/16/2016 18:19:14: /rest/user/good (GET, 200, :1ms)
+[Verbose] 11/16/2016 20:56:42: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 20:56:42: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 20:56:42: parsed schemas files.
+[Verbose] 11/16/2016 20:56:42: created db connections.
+[Info] 11/16/2016 20:56:42: start web services on 8088
+[Info] 11/16/2016 20:56:44: found config.
+[Info] 11/16/2016 20:56:44: found logger.
+[Info] 11/16/2016 20:56:44: found connections
+[Verbose] 11/16/2016 20:56:44: /rest/user/good (GET, 200, :9ms)
+[Info] 11/16/2016 20:57:16: found config.
+[Info] 11/16/2016 20:57:16: found logger.
+[Info] 11/16/2016 20:57:16: found connections
+[Verbose] 11/16/2016 20:57:16: /rest/user/good (GET, 200, :11ms)
+[Info] 11/16/2016 20:57:22: found config.
+[Info] 11/16/2016 20:57:22: found logger.
+[Info] 11/16/2016 20:57:22: found connections
+[Verbose] 11/16/2016 20:57:22: /rest/user/good (GET, 200, :7ms)
+[Info] 11/16/2016 20:57:22: found config.
+[Info] 11/16/2016 20:57:22: found logger.
+[Info] 11/16/2016 20:57:22: found connections
+[Verbose] 11/16/2016 20:57:22: /rest/user/good (GET, 200, :2ms)
+[Info] 11/16/2016 20:57:22: found config.
+[Info] 11/16/2016 20:57:22: found logger.
+[Info] 11/16/2016 20:57:22: found connections
+[Verbose] 11/16/2016 20:57:22: /rest/user/good (GET, 200, :2ms)
+[Info] 11/16/2016 20:57:23: found config.
+[Info] 11/16/2016 20:57:23: found logger.
+[Info] 11/16/2016 20:57:23: found connections
+[Verbose] 11/16/2016 20:57:23: /rest/user/good (GET, 200, :2ms)
+[Info] 11/16/2016 20:57:30: found config.
+[Info] 11/16/2016 20:57:30: found logger.
+[Info] 11/16/2016 20:57:30: found connections
+[Verbose] 11/16/2016 20:57:30: /rest/user/good (GET, 200, :1ms)
+[Info] 11/16/2016 20:57:30: found logger.
+[Info] 11/16/2016 20:57:30: found config.
+[Verbose] 11/16/2016 20:57:30: /rest/user/test (GET, 200, :1ms)
+[Info] 11/16/2016 20:57:30: found connections
+[Info] 11/16/2016 20:57:32: found logger.
+[Info] 11/16/2016 20:57:32: found config.
+[Info] 11/16/2016 20:57:32: found connections
+[Verbose] 11/16/2016 20:57:32: /rest/user/test (GET, 200, :1ms)
+[Info] 11/16/2016 20:57:32: found config.
+[Info] 11/16/2016 20:57:32: found logger.
+[Info] 11/16/2016 20:57:32: found connections
+[Verbose] 11/16/2016 20:57:32: /rest/user/test (GET, 200, :2ms)
+[Info] 11/16/2016 20:57:39: found config.
+[Info] 11/16/2016 20:57:39: found logger.
+[Info] 11/16/2016 20:57:39: found connections
+[Verbose] 11/16/2016 20:57:39: /rest/user/test (GET, 200, :19ms)
+[Verbose] 11/16/2016 20:59:37: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 20:59:37: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 20:59:37: parsed schemas files.
+[Verbose] 11/16/2016 20:59:37: created db connections.
+[Info] 11/16/2016 20:59:37: start web services on 8088
+[Info] 11/16/2016 20:59:42: found config.
+[Info] 11/16/2016 20:59:42: found connections
+[Info] 11/16/2016 20:59:42: found logger.
+[Verbose] 11/16/2016 20:59:42: /rest/user/test (GET, 200, :9ms)
+[Info] 11/16/2016 20:59:47: found config.
+[Info] 11/16/2016 20:59:47: found logger.
+[Info] 11/16/2016 20:59:47: found connections
+[Verbose] 11/16/2016 20:59:47: /rest/user/test (GET, 200, :5ms)
+[Info] 11/16/2016 20:59:47: found config.
+[Info] 11/16/2016 20:59:47: found logger.
+[Info] 11/16/2016 20:59:47: found connections
+[Verbose] 11/16/2016 20:59:47: /rest/user/test (GET, 200, :2ms)
+[Info] 11/16/2016 20:59:47: found config.
+[Info] 11/16/2016 20:59:47: found logger.
+[Info] 11/16/2016 20:59:47: found connections
+[Verbose] 11/16/2016 20:59:47: /rest/user/test (GET, 200, :2ms)
+[Info] 11/16/2016 20:59:47: found config.
+[Info] 11/16/2016 20:59:47: found logger.
+[Info] 11/16/2016 20:59:47: found connections
+[Verbose] 11/16/2016 20:59:47: /rest/user/test (GET, 200, :6ms)
+[Verbose] 11/16/2016 21:00:23: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 21:00:23: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 21:00:23: parsed schemas files.
+[Verbose] 11/16/2016 21:00:23: created db connections.
+[Info] 11/16/2016 21:00:23: start web services on 8088
+[Info] 11/16/2016 21:00:24: found config.
+[Info] 11/16/2016 21:00:24: found connections
+[Info] 11/16/2016 21:00:24: found logger.
+[Verbose] 11/16/2016 21:00:24: /rest/user/test (GET, 200, :14ms)
+[Verbose] 11/16/2016 21:00:55: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 21:00:55: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 21:00:55: created db connections.
+[Verbose] 11/16/2016 21:00:55: parsed schemas files.
+[Info] 11/16/2016 21:00:55: start web services on 8088
+[Verbose] 11/16/2016 21:01:01: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 21:01:01: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 21:01:01: parsed schemas files.
+[Verbose] 11/16/2016 21:01:01: created db connections.
+[Info] 11/16/2016 21:01:01: start web services on 8088
+[Info] 11/16/2016 21:01:03: found config.
+[Info] 11/16/2016 21:01:03: found logger.
+[Info] 11/16/2016 21:01:03: found connections
+[Verbose] 11/16/2016 21:01:03: /rest/user/test (GET, 200, :12ms)
+[Info] 11/16/2016 21:02:32: found config.
+[Info] 11/16/2016 21:02:32: found logger.
+[Info] 11/16/2016 21:02:32: found connections
+[Verbose] 11/16/2016 21:02:32: /rest/user/test (GET, 200, :3ms)
+[Verbose] 11/16/2016 21:02:36: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 21:02:36: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 21:02:36: parsed schemas files.
+[Verbose] 11/16/2016 21:02:36: created db connections.
+[Info] 11/16/2016 21:02:36: start web services on 8088
+[Info] 11/16/2016 21:02:36: found config.
+[Info] 11/16/2016 21:02:36: found logger.
+[Info] 11/16/2016 21:02:36: found connections
+[Verbose] 11/16/2016 21:02:36: /rest/user/test (GET, 200, :11ms)
+[Info] 11/16/2016 21:02:40: found config.
+[Info] 11/16/2016 21:02:40: found logger.
+[Info] 11/16/2016 21:02:40: found connections
+[Verbose] 11/16/2016 21:02:40: /rest/user/test (GET, 200, :3ms)
+[Verbose] 11/16/2016 21:03:51: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 21:03:51: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 21:03:51: parsed schemas files.
+[Verbose] 11/16/2016 21:03:51: created db connections.
+[Info] 11/16/2016 21:03:51: start web services on 8088
+[Info] 11/16/2016 21:04:00: found config.
+[Info] 11/16/2016 21:04:00: found logger.
+[Info] 11/16/2016 21:04:00: found connections
+[Verbose] 11/16/2016 21:04:00: /rest/user/test (GET, 200, :13ms)
+[Verbose] 11/16/2016 21:04:25: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/post.js.
+[Verbose] 11/16/2016 21:04:25: found schema file: /Users/jiangyifeng/SourceCode/node/nblue/nblue-koa/test/schemas/user.js.
+[Verbose] 11/16/2016 21:04:25: created db connections.
+[Verbose] 11/16/2016 21:04:25: parsed schemas files.
+[Info] 11/16/2016 21:04:25: start web services on 8088
+[Info] 11/16/2016 21:04:27: found config.
+[Info] 11/16/2016 21:04:27: found logger.
+[Info] 11/16/2016 21:04:27: found connections
+[Verbose] 11/16/2016 21:04:27: /rest/user/test (GET, 200, :14ms)
+[Info] 11/16/2016 21:04:29: found config.
+[Info] 11/16/2016 21:04:29: found logger.
+[Info] 11/16/2016 21:04:29: found connections
+[Verbose] 11/16/2016 21:04:29: /rest/user/get/dsfdf (GET, 200, :5ms)
