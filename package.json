@@ -20,6 +20,10 @@
     "url": "https://github.com/nblue2016/nblue-koa/issues"
   },
   "homepage": "https://github.com/nblue2016/nblue-koa#readme",
+  "_npmUser": {
+    "name": "nblue2016",
+    "email": "nblue2016@163.com"
+  },
   "dependencies": {
     "koa": "^1.2.4",
     "koa-static": "^2.0.0",
