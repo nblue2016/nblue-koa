@@ -1,0 +1,32 @@
+{
+  "name": "nblue-koa",
+  "version": "1.0.0",
+  "description": "nblue middlewares of Koa",
+  "main": "index.js",
+  "scripts": {
+    "start": "node test/start",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nblue2016/nblue-koa.git"
+  },
+  "keywords": [
+    "koa"
+  ],
+  "author": "Bruce Jiang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nblue2016/nblue-koa/issues"
+  },
+  "homepage": "https://github.com/nblue2016/nblue-koa#readme",
+  "dependencies": {
+    "koa": "^1.2.4",
+    "koa-static": "^2.0.0",
+    "nblue": "0.0.25",
+    "nblue-data": "0.0.21"
+  },
+  "devDependencies": {
+    "eslint": "^3.10.1"
+  }
+}

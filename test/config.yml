@@ -1,0 +1,34 @@
+---
+$$version:  "1.0.1"
+name:  koa configuration file
+
+databases:
+    db1:  connection string for test
+    db2:  connection string for system
+
+settings:
+    port:  8088
+    base: ${process.cwd()}
+    supportHttps:  false
+    supportMiddleware:  true
+    useSubFolder:  false
+    recordSteps:  false
+
+logger:
+    file: './test/web.log'
+    level: 4
+    levels:
+      rest: 3
+
+middlewares:
+    - nblue-logger
+    - nblue-static
+    - nblue-hello
+
+statics:
+  - 'test/content'
+
+schemas:
+  - 'schemas'
+
+...
