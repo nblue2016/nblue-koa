@@ -4,22 +4,23 @@ methods:
     '/test': test
     '/model': model
     '/list': list
-    '/:key/:id': retrieve
     '/get/:id': get
+    '/:key/:val': retrieve
     '/': disable
   post:
     '/create': create
     '/query': query
     '/count': count
-    '/': create
     '/*': disable
   put:
-    '/:id': update
-    '/': update
+    '/update': update
+    '/:id': upd
+    '/': disable
   delete:
-    '/:id': delete
-    '/': update
+    '/delete': delete
+    '/:id': del
+    '/': disable
   options:
     '*': pass
   all:
-#    '*': disable
+    '/*': disable

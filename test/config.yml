@@ -3,8 +3,8 @@ $$version:  "1.0.1"
 name:  koa configuration file
 
 connections:
-  - db1:  mongodb://nblue:password@127.0.0.1:27017/nblue?authDb=nblue
-  - db2:  sqlite://test/data/nblue.sqlite
+  - db12:  mongodb://nblue:password@127.0.0.1:27017/nblue?authDb=nblue
+  - db1:  sqlite://test/data/nblue.sqlite
 
 settings:
   port:  8088
@@ -24,7 +24,7 @@ middlewares:
   - nblue-logger
   - nblue-static
 #  - nblue-data
-  - nblue-hello
+#  - nblue-hello
 
 statics:
   - 'test/content'
