@@ -1,25 +1,23 @@
 prefix: '/rest'
+errors:
+  json: true
 methods:
   get:
+    '/:key/:val': retrieve
     '/test': test
     '/model': model
     '/list': list
-    '/get/:id': get
-    '/:key/:val': retrieve
-    '/': disable
+    '/:id': get
   post:
     '/create': create
     '/query': query
     '/count': count
-    '/*': disable
   put:
-    '/update': update
-    '/:id': upd
-    '/': disable
+    '/:id': getup
+    '/': update
   delete:
-    '/delete': delete
-    '/:id': del
-    '/': disable
+    '/:id': getdel
+    '/': delete
   options:
     '*': pass
   all:
