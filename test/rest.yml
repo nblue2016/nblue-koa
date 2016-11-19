@@ -19,6 +19,6 @@ methods:
     '/:id': getdel
     '/': delete
   options:
-    '*': pass
+    '/*': pass
   all:
     '/*': disable
