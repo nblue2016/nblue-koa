@@ -1,4 +1,5 @@
 prefix: '/rests'
+base: 'test/scripts'
 methods:
   get:
     '/test': test

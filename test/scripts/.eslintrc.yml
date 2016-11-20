@@ -1,6 +1,5 @@
 ---
   rules:
     # disable some rules for test
+    no-undef: 0
     no-magic-numbers: 0
-    id-length: 0
-#    no-unused-vars: 0
