@@ -34,10 +34,6 @@ schemas:
   - 'test/content'
 
 routes:
-  - rests:
-    config: 'test/rests.yml'
-    adapter: 'nblue-rests'
-  - rest:
-    config: 'test/rest.yml'
-    adapter: 'nblue-rest'
+  - 'test/rests.yml'
+  - 'test/rest.yml'
 ...

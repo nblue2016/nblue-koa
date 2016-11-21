@@ -1,6 +1,4 @@
-prefix: '/rest'
-errors:
-  json: true
+adapter: 'nblue-rest'
 methods:
   get:
     '/:key/:val': retrieve
@@ -9,9 +7,10 @@ methods:
     '/list': list
     '/:id': get
   post:
+    '/aggregate': aggregate
+    '/count': count
     '/create': create
     '/query': query
-    '/count': count
   put:
     '/:id': getup
     '/': update
@@ -22,3 +21,7 @@ methods:
     '/*': pass
   all:
     '/*': disable
+prefix: '/rest'
+settings:
+  showModels: true
+  jsonError: true
