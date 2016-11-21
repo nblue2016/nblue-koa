@@ -25,3 +25,4 @@ prefix: '/rest'
 settings:
   showModels: true
   jsonError: true
+  use$: true

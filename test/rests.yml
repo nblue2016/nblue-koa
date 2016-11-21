@@ -10,3 +10,5 @@ methods:
     '/run/:script': run
     '/:script': run
 prefix: '/rests'
+settings:
+  jsonError: true
