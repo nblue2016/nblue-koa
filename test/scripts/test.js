@@ -5,7 +5,7 @@ script({
     get('logger').
     get('level'),
   newid: (ctx) => co(function *() {
-    const adpt = yield ctx.getDbAdapter('user')
+    const adpt = yield ctx.$getDbAdapter('user')
 
     const user = yield adpt.create({
       name: 'test',

@@ -2,9 +2,10 @@ prefix: '/rests'
 base: 'test/scripts'
 methods:
   get:
-    '/test': test
+    #'/test': test
     '/run/:script': run
     '/:script': run
     '/*': run
   post:
-    '': run
+    '/run/:script': run
+    '/:script': run
