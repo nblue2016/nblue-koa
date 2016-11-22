@@ -1,9 +1,20 @@
 const NKoa = require('../lib/nkoa.js')
+
 const nkoa = new NKoa()
+const configFile = `${process.cwd()}/test/config.yml`
 
 nkoa.
-  create(`${process.cwd()}/test/config.yml`).
-  then(() => nkoa.use()).
-  then(() => nkoa.routes()).
-  then(() => nkoa.listen()).
-  catch(() => null)
+  create(configFile).
+  then(() => {
+    nkoa.use()
+    nkoa.routes()
+    nkoa.listen()
+  }).
+  catch((err) => {
+    const ctx = nkoa.Context
+    const logger = ctx.logger
+
+    if (logger) {
+      logger.error(err.message)
+    }
+  })

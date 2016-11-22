@@ -1,0 +1,8 @@
+$$version: 1.0.2
+$$description: config file for scope
+
+database:
+  connection: 'sqlite://data/scope.sqlite'
+settings:
+  testkey: '/users'
+  ignoreCase: true

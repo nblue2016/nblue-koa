@@ -11,4 +11,4 @@ methods:
     '/:script': run
 prefix: '/rests'
 settings:
-  jsonError: true
+  jsonError: false

@@ -9,10 +9,8 @@ connections:
 settings:
   port:  8088
   base: ${process.cwd()}
+  jsonError: true
   supportHttps:  false
-  supportMiddleware:  true
-  useSubFolder:  false
-  recordSteps:  false
 
 logger:
   file: './test/web.log'
@@ -23,6 +21,7 @@ logger:
 middlewares:
   - nblue-logger
   - nblue-static
+  - nblue-scope
 #  - nblue-data
 #  - nblue-hello
 
@@ -36,4 +35,8 @@ schemas:
 routes:
   - 'test/rests.yml'
   - 'test/rest.yml'
+scope:
+  config: test/scope.yml
+  router:
+    prefix: '/api/scope'
 ...
