@@ -1,5 +1,4 @@
-name: rests
-adapter: nblue-rests
+name: nblue-rests
 base: 'test/scripts'
 methods:
   get:

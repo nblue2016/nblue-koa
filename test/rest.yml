@@ -1,5 +1,4 @@
-name: rest
-adapter: nblue-rest
+name: nblue-rest
 methods:
   get:
     '/:key/:val': retrieve
