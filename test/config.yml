@@ -23,7 +23,7 @@ middlewares:
   - nblue-static
   - nblue-scope
 #  - nblue-data
-#  - nblue-hello
+  - nblue-hello
 
 statics:
   - 'test/content'
