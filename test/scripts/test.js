@@ -14,5 +14,15 @@ script({
 
     return user._id
   }),
-  user: (ctx) => rest(`http://127.0.0.1:8088/rest/user/${ctx.newid}`)
+  user: (ctx) => {
+    const headers = {
+      scope: 'admin'
+    }
+
+    return rest(
+      `http://127.0.0.1:8088/rest/user/${ctx.newid}`,
+      'GET',
+      headers
+    )
+  }
 })

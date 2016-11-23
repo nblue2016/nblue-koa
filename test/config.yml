@@ -21,7 +21,7 @@ logger:
 middlewares:
   - nblue-logger
   - nblue-static
-  - nblue-scope
+#  - nblue-scope
 #  - nblue-data
   - nblue-hello
 

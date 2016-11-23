@@ -1,7 +1,6 @@
-adapter: 'nblue-rests'
+name: rests
+adapter: nblue-rests
 base: 'test/scripts'
-errors:
-  json: true
 methods:
   get:
     '/run/:script': run
@@ -9,6 +8,10 @@ methods:
   post:
     '/run/:script': run
     '/:script': run
+middlewares:
+  - nblue-json
+  - nblue-data
+  - nblue-scope
 prefix: '/rests'
 settings:
   jsonError: false
