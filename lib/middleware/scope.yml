@@ -4,5 +4,5 @@ $$description: config file for scope
 database:
   connection: 'sqlite://data/scope.sqlite'
 settings:
-  testkey: '/users'
-  ignoreCase: true
+  ignore-case: true
+  allow-guest: false

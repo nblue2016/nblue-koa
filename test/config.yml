@@ -35,8 +35,8 @@ schemas:
 routes:
   - 'test/rests.yml'
   - 'test/rest.yml'
+  - 'test/scope.yml'
+
 scope:
-  config: test/scope.yml
-  router:
-    prefix: '/api/scope'
+  config: 'test/scope.yml'
 ...

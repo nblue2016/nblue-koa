@@ -1,6 +1,6 @@
 name: nblue-rests
 base: 'test/scripts'
-methods:
+routes:
   get:
     '/run/:script': run
     '/:script': run
@@ -11,6 +11,6 @@ middlewares:
   - nblue-json
   - nblue-data
   - nblue-scope
-prefix: '/rests'
+prefix: '/apis'
 settings:
   jsonError: false

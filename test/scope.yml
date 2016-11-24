@@ -1,7 +1,19 @@
-$$version: 1.0.3
-$$description: config file for scope
+name: nblue-scope
 
 database:
   connection: 'sqlite://test/data/scope.sqlite'
+
 settings:
   ignoreCase: false
+
+middlewares:
+  - nblue-json
+  - nblue-scope
+
+routes:
+  get:
+    '/list': list
+  post:
+    '/create': create
+
+prefix: '/api/scope'
