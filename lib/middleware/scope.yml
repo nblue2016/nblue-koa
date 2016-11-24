@@ -5,4 +5,4 @@ database:
   connection: 'sqlite://data/scope.sqlite'
 settings:
   ignore-case: true
-  allow-guest: false
+  allow-guest: true

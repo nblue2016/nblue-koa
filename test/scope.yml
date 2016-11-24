@@ -13,6 +13,7 @@ middlewares:
 routes:
   get:
     '/list': list
+    '/ls': list
   post:
     '/create': create
 
