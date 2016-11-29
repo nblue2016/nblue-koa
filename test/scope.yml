@@ -5,6 +5,7 @@ database:
 
 settings:
   ignoreCase: false
+  allowGuest: true
 
 middlewares:
   - nblue-json
