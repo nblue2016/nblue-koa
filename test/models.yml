@@ -1,4 +1,5 @@
-name: nblue-rest
+name: models
+
 routes:
   get:
     '/:key/:val': retrieve
@@ -21,11 +22,14 @@ routes:
     '/*': pass
   all:
     '/*': disable
+
 middlewares:
-  - nblue-json
-  - nblue-data
-  - nblue-scope
+  - json
+  - data
+  - scope
+
 prefix: '/api'
+
 settings:
   showModels: true
   use$: true

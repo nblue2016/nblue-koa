@@ -19,9 +19,9 @@ logger:
     rest: 3
 
 middlewares:
-  - nblue-logger
-  - nblue-static
-  - nblue-hello
+  - logger
+  - static
+  - hello
 
 statics:
   - 'test/content'
@@ -31,9 +31,9 @@ schemas:
   - 'test/content'
 
 routes:
-  - 'test/rests.yml'
+  - 'test/script.yml'
   - 'test/scope.yml'
-  - 'test/rest.yml'
+  - 'test/models.yml'
 
 scope:
   config: 'test/scope.yml'

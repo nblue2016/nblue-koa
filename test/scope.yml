@@ -1,4 +1,4 @@
-name: nblue-scope
+name: scope
 
 database:
   connection: 'sqlite://test/data/scope.sqlite'
@@ -8,8 +8,8 @@ settings:
   allowGuest: true
 
 middlewares:
-  - nblue-json
-  - nblue-scope
+  - json
+  - scope
 
 routes:
   get:

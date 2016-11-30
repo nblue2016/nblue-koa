@@ -20,7 +20,7 @@ script({
     }
 
     return rest(
-      `http://127.0.0.1:8088/rest/user/${ctx.newid}`,
+      `http://127.0.0.1:8088/api/user/${ctx.newid}`,
       'GET',
       headers
     )
