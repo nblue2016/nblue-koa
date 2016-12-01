@@ -3,7 +3,7 @@
   "description": "nblue middlewares of Koa",
   "main": "index.js",
   "scripts": {
-    "start": "node test/start",
+    "start": "node test/start -env=dev",
     "test": "npm test"
   },
   "repository": {

@@ -27,7 +27,7 @@ statics:
   - 'test/content'
 
 schemas:
-  - 'test/schemas'
+  - 'test/models'
   - 'test/content'
 
 routes:
