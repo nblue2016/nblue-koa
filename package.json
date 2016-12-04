@@ -29,7 +29,7 @@
     "koa-router": "^5.4.0",
     "koa-static": "^2.0.0",
     "nblue": "0.0.37",
-    "nblue-data": "0.0.32",
+    "nblue-data": "0.0.33",
     "orm": "^3.1.0",
     "sqlite": "^2.2.3"
   },
