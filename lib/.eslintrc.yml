@@ -3,4 +3,5 @@
     # disable some rules for test
     no-magic-numbers: 0
     id-length: 0
+    no-process-env: 0
 #    no-unused-vars: 0
