@@ -2,10 +2,11 @@ name: models
 
 routes:
   get:
-    '/:key/:val': retrieve
-    '/test': test
+#    '/test': test
     '/model': model
     '/list': list
+    '/query': getquery
+    '/:key/:val': retrieve
     '/:id': get
   post:
     '/aggregate': aggregate
