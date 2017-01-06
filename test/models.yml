@@ -2,7 +2,7 @@ name: models
 
 routes:
   get:
-#    '/test': test
+    '/test': test
     '/model': model
     '/list': list
     '/query': getquery
@@ -34,3 +34,12 @@ prefix: '/api'
 settings:
   showModels: true
   use$: true
+  response:
+    headers:
+      Access-Control-Allow-Credentials: "true"
+      Access-Control-Allow-Headers: "Origin, X-Requested-With, Content-Type, Accept, Token"
+      Access-Control-Allow-Methods: "HEAD, GET, POST, PUT, DELETE, OPTIONS"
+      Access-Control-Allow-Origin: "origin"
+      Access-Control-Max-Age: "3628800"
+    origins:
+      - "http://localhost:8080"

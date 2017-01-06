@@ -8,6 +8,7 @@ nkoa.
     nkoa.use()
     nkoa.routes()
     nkoa.listen()
+    console.log('listen')
   }).
   catch((err) => {
     const ctx = nkoa.Context
