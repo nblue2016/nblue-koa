@@ -15,7 +15,10 @@ routes:
   get:
     '/list': list
     '/ls': list
+    '/model': model
   post:
     '/create': create
 
 prefix: '/api/scope'
+
+settings2:
