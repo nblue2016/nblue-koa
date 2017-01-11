@@ -6,6 +6,7 @@ routes:
     '/model': model
     '/list': list
     '/query': getquery
+    '/count': getcount
     '/:key/:val': retrieve
     '/:id': get
   post:
