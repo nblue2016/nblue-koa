@@ -20,5 +20,3 @@ routes:
     '/create': create
 
 prefix: '/api/scope'
-
-settings2:

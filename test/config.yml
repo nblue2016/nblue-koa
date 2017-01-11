@@ -16,7 +16,7 @@ settings:
       Access-Control-Allow-Credentials: "true"
       Access-Control-Allow-Headers: "Origin, X-Requested-With, Content-Type, Accept, Token"
       Access-Control-Allow-Methods: "HEAD, GET, POST, PUT, DELETE, OPTIONS"
-      Access-Control-Allow-Origin: "*"
+      Access-Control-Allow-Origin: "unknown"
       Access-Control-Max-Age: "3628800"
     origins:
       - "http://localhost:8080"
