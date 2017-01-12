@@ -1,4 +1,4 @@
-const NKoa = require('../lib/nkoa.js')
+const NKoa = require('../lib')
 const nkoa = new NKoa()
 const configFile = `${process.cwd()}/test/config.yml`
 
