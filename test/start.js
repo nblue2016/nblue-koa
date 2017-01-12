@@ -4,13 +4,10 @@ const configFile = `${process.cwd()}/test/config.yml`
 
 nkoa.
   create(configFile).
-  then(() => {
-    nkoa.use()
-    nkoa.routes()
-    nkoa.listen()
-  }).
+  then(() => nkoa.use()).
+  then(() => nkoa.routes()).
+  then(() => nkoa.listen()).
   catch((err) => {
-    console.log(err)
     const ctx = nkoa.Context
 
     const logger = ctx.logger
