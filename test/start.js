@@ -10,6 +10,7 @@ nkoa.
     nkoa.listen()
   }).
   catch((err) => {
+    console.log(err)
     const ctx = nkoa.Context
 
     const logger = ctx.logger
