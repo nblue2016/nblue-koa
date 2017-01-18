@@ -1,0 +1,8 @@
+$$version: 1.0.2
+$$description: config file for session
+
+database:
+  connection: 'sqlite://data/session.sqlite'
+settings:
+  ignore-case: true
+  allow-guest: true

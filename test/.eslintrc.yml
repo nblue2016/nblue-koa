@@ -1,0 +1,11 @@
+---
+  rules:
+    # disable some rules for test
+    no-bitwise: 0 # disallow bitwise operators
+    no-magic-numbers: 0
+    no-plusplus: 0
+    no-process-env: 0
+    no-underscore-dangle: 0
+    id-length: 0
+
+#    no-unused-vars: 0

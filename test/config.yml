@@ -30,6 +30,7 @@ logger:
 middlewares:
   - logger
   - static
+  - session
   - hello
 
 statics:
