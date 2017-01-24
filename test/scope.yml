@@ -6,17 +6,12 @@ database:
 settings:
   ignoreCase: false
   allowGuest: false
+  mergeRoutes: models
+
+routes: {}
 
 middlewares:
   - json
   - scope
-
-routes:
-  get:
-    '/list': list
-    '/ls': list
-    '/model': model
-  post:
-    '/create': create
 
 prefix: '/api/scope'

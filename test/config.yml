@@ -7,10 +7,10 @@ connections:
   - db2:  sqlite://test/data/nblue.sqlite
 
 settings:
-  port:  8088
   base: ${process.cwd()}
-  jsonError: true
+  port:  8088
   supportHttps:  false
+  jsonError: true
   json-response:
     headers:
       Access-Control-Allow-Credentials: "true"
@@ -44,6 +44,7 @@ routes:
   - 'test/script.yml'
   - 'test/scope.yml'
   - 'test/models.yml'
+
 
 scope:
   config: 'test/scope.yml'
