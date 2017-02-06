@@ -30,7 +30,8 @@ logger:
 middlewares:
   - logger
   - static
-  - session
+  - data
+#  - session
   - hello
 
 statics:
@@ -41,10 +42,9 @@ schemas:
   - 'test/content'
 
 routes:
-  - 'test/script.yml'
-  - 'test/scope.yml'
-  - 'test/models.yml'
-
+#  - 'test/script.yml'
+#  - 'test/scope.yml'
+#  - 'test/models.yml'
 
 scope:
   config: 'test/scope.yml'

@@ -7,7 +7,7 @@ const configFile = `${process.cwd()}/test/config.yml`
 const nkoa = new NKoa()
 
 co(function *() {
-  yield nkoa.create(configFile)
+  yield nkoa.create({ configFile })
 
   // load defined middlewares
   yield nkoa.use()
