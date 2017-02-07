@@ -11,7 +11,7 @@ settings:
   port:  8088
   supportHttps:  false
   jsonError: true
-  json-response:
+  jsonResponse:
     headers:
       Access-Control-Allow-Credentials: "true"
       Access-Control-Allow-Headers: "Origin, X-Requested-With, Content-Type, Accept, Token"
@@ -27,12 +27,22 @@ logger:
   levels:
     rest: 3
 
-middlewares:
+components:
   - logger
   - static
   - data
 #  - session
+  - scope
+
+middlewares:
+  - logger
   - hello
+#  - session
+
+routes:
+#  - 'test/script.yml'
+#  - 'test/scope.yml'
+#  - 'test/models.yml'
 
 statics:
   - 'test/content'
@@ -40,11 +50,6 @@ statics:
 schemas:
   - 'test/models'
   - 'test/content'
-
-routes:
-#  - 'test/script.yml'
-#  - 'test/scope.yml'
-#  - 'test/models.yml'
 
 scope:
   config: 'test/scope.yml'
