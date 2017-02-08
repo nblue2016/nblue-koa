@@ -33,13 +33,13 @@ components:
   - logger
   - static
   - data
-#  - session
+  - session
   - scope
 
 middlewares:
   - logger
   - hello
-#  - session
+  - session
 
 routes:
   - 'test/script.yml'
