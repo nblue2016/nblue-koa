@@ -11,7 +11,6 @@ routes:
 
 middlewares:
   - json
-  - data
   - scope
 
 prefix: '/apis'

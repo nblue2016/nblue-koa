@@ -2,9 +2,11 @@
 $$version:  "1.0.1"
 name:  koa configuration file
 
-connections:
-  - db1:  mongodb://nblue:password@127.0.0.1:27017/nblue?authDb=nblue
-  - db2:  sqlite://test/data/nblue.sqlite
+database:
+  connections:
+    db1:  mongodb://nblue:password@127.0.0.1:27017/nblue?authDb=nblue
+    db2:  sqlite://test/data/nblue.sqlite
+  proxies:
 
 settings:
   base: ${process.cwd()}
@@ -40,9 +42,9 @@ middlewares:
 #  - session
 
 routes:
-#  - 'test/script.yml'
+  - 'test/script.yml'
 #  - 'test/scope.yml'
-#  - 'test/models.yml'
+  - 'test/models.yml'
 
 statics:
   - 'test/content'
