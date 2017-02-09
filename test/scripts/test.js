@@ -19,10 +19,8 @@ script({
       scope: 'admin'
     }
 
-    return rest(
-      `http://127.0.0.1:8088/api/user/${ctx.newid}`,
-      'GET',
-      headers
-    )
+    const url = `http://127.0.0.1:8088/api/user/${ctx.newid}`
+
+    return rest(url, 'GET', headers)
   }
 })
