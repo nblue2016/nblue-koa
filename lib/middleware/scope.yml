@@ -4,5 +4,6 @@ $$description: config file for scope
 database:
   connection: 'sqlite://data/scope.sqlite'
 settings:
-  ignore-case: true
-  allow-guest: true
+  ignoreCase: true
+  allowGuest: true
+  disableHeader: false

@@ -1,6 +1,7 @@
-const nblue = require('nblue-core')
+const core = require('nblue-core')
 const NKoa = require('../lib')
-const co = nblue.co
+
+const co = core.co
 
 const configFile = `${process.cwd()}/test/config.yml`
 
@@ -18,36 +19,3 @@ co(function *() {
   // listen port to start web server
   nkoa.listen()
 })
-
-/* nkoa.
-  create(configFile).
-  then(() => nkoa.use()).
-  then(() => nkoa.routes()).
-  then(() => nkoa.listen()).
-  catch((err) => {
-    const ctx = nkoa.Context
-
-    const logger = ctx.logger
-
-    if (logger) {
-      logger.error(err.message)
-    }
-  }) */
-
-  /*
-  co(function *() {
-    yield nkoa.create(configFile)
-
-    nkoa.use()
-    nkoa.routes()
-    nkoa.listen()
-  }).
-  catch((err) => {
-    const ctx = nkoa.Context
-    const logger = ctx.$logger
-
-    if (logger) {
-      logger.error(err.message)
-    }
-  })
-  */
