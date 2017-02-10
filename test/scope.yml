@@ -6,7 +6,7 @@ database:
 settings:
   ignoreCase: false
   allowGuest: false
-  mergeRoutes: models
+  mergeRouter: models
 
 routes: {}
 
