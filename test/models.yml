@@ -27,7 +27,7 @@ routes:
 
 middlewares:
   - json
-#  - scope
+  - scope
 
 prefix: '/api'
 

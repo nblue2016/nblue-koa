@@ -33,8 +33,8 @@ components:
   - logger
   - static
   - data
-#  - session
-#  - scope
+  - session
+  - scope
 
 middlewares:
   - logger
@@ -44,7 +44,6 @@ middlewares:
 routes:
   - 'test/script.yml'
   - 'test/models.yml'
-#  - 'test/scope.yml'
 
 statics:
   - 'test/content'

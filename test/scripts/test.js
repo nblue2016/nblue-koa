@@ -5,22 +5,20 @@ script({
     get('logger').
     get('level'),
   newid: (ctx) => co(function *() {
-    const adpt = yield ctx.$getDbAdapter('user')
-
-    const user = yield adpt.create({
+    const userData = {
       name: 'test',
-      nick: 'bluebat'
-    })
+      nick: 'goodman'
+    }
+
+    const user = yield ctx.$execute(
+      'user',
+      (adapter) => adapter.create(userData)
+    )
 
     return user._id
   }),
-  user: (ctx) => {
-    const headers = {
-      scope: 'admin'
-    }
-
-    const url = `http://127.0.0.1:8088/api/user/${ctx.newid}`
-
-    return rest(url, 'GET', headers)
-  }
+  user: (ctx) => ctx.$get(
+      `http://127.0.0.1:8088/api/user/${ctx.newid}`, {
+        scope: 'admin'
+      })
 })
