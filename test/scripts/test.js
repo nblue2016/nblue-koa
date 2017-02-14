@@ -17,8 +17,5 @@ script({
 
     return user._id
   }),
-  user: (ctx) => ctx.$get(
-      `http://127.0.0.1:8088/api/user/${ctx.newid}`, {
-        scope: 'admin'
-      })
+  user: (ctx) => ctx.$get(`/api/user/${ctx.newid}`)
 })
