@@ -8,6 +8,10 @@ routes:
   post:
     '/run/:script': run
     '/:script': run
+  options:
+    '/*': pass
+  all:
+    '/*': disable
 
 middlewares:
   - json
