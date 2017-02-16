@@ -38,8 +38,8 @@ components:
 
 middlewares:
   - logger
+  - session
 #  - hello
-#  - session
 
 routes:
   - 'test/router/test.yml'

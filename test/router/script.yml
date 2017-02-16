@@ -17,6 +17,6 @@ middlewares:
   - json
   - scope
 
-prefix: '/apis'
+prefix: '/scripts'
 settings:
   jsonError: false
