@@ -1,0 +1,16 @@
+name: test::test/router/test.js
+
+routes:
+  get:
+    '/test2': pass
+    '/ls': ls
+    '/method1': method1
+    '/method2': method2
+
+middlewares:
+  - json
+#  - scope
+
+prefix: '/api/user'
+settings:
+  jsonError: false

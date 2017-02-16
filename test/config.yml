@@ -42,8 +42,9 @@ middlewares:
 #  - session
 
 routes:
-  - 'test/script.yml'
-  - 'test/models.yml'
+  - 'test/router/test.yml'
+  - 'test/router/script.yml'
+  - 'test/router/models.yml'
 
 statics:
   - 'test/content'
