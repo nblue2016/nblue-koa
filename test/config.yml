@@ -42,6 +42,7 @@ middlewares:
 #  - hello
 
 routes:
+  - 'test/router/controlers.yml'
   - 'test/router/test.yml'
   - 'test/router/script.yml'
   - 'test/router/models.yml'
