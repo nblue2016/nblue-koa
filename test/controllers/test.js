@@ -1,6 +1,6 @@
-const SuperRouter = require('../../lib/router/router-super.js')
+const Controller = require('../../lib/').Controller
 
-class TestRouter extends SuperRouter {
+class TestRouter extends Controller {
 
   ls () {
     return this.generateResponse({
@@ -15,7 +15,7 @@ class TestRouter extends SuperRouter {
 
       ctx.body = { name: 'method1' }
 
-      yield Promise.resolve(0)
+      yield Promise.resolve()
     }
   }
 

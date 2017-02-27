@@ -1,5 +1,5 @@
 name: test
-src: test/controlers/test.js
+src: test/controllers/test.js
 routes:
   get:
     '/test2': pass

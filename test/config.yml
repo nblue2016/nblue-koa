@@ -30,22 +30,22 @@ logger:
     rest: 3
 
 components:
-  - logger
+  - logger:
+    src: 'test/components/logger.js'
   - static
   - data
-  - session
-  - scope
+#  - session
+#  - scope
 
 middlewares:
   - logger
-  - session
+#  - session
 #  - hello
 
 routes:
-  - 'test/router/controlers.yml'
-  - 'test/router/test.yml'
-  - 'test/router/script.yml'
-  - 'test/router/models.yml'
+  - 'test/controllers/controllers.yml'
+  #- 'test/router/script.yml'
+  #- 'test/router/models.yml'
 
 statics:
   - 'test/content'

@@ -1,6 +1,6 @@
-const Controler = require('../../lib/router/router-super.js')
+const Controller = require('../../lib/').Controller
 
-class Controler1 extends Controler {
+class Controller2 extends Controller {
 
   method1 () {
     return function *() {
@@ -8,8 +8,8 @@ class Controler1 extends Controler {
 
       ctx.body = {
         a: 'm1',
-        b: 2,
-        c: 1
+        b: 1,
+        c: 2
       }
       ctx.type = 'json'
 
@@ -24,7 +24,7 @@ class Controler1 extends Controler {
       ctx.body = {
         a: 'm2',
         b: 2,
-        c: 1
+        c: 2
       }
       ctx.type = 'json'
 
@@ -34,4 +34,4 @@ class Controler1 extends Controler {
 
 }
 
-module.exports = Controler1
+module.exports = Controller2

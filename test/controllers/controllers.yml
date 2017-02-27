@@ -1,0 +1,84 @@
+name: controllers
+controllers:
+  - name: controller1
+    src: test/controllers/controller1.js
+    routes:
+      get:
+        'test': test
+        'method1': method1
+        'method2': method2
+    prefix: '/api/v1/'
+  - name: controller2
+    src: test/controllers/controller2.js
+    routes:
+      get:
+        'test': test
+        'method1': method1
+      post:
+        'method2': method2
+    prefix: '/api/v2/'
+
+  - name: test
+    src: test/controllers/test.js
+    routes:
+      get:
+        'test2': pass
+        'ls': ls
+        'method1': method1
+        'method2': method2
+
+  - name: script
+    base: 'test/scripts'
+    routes:
+      get:
+        'run/:script': run
+        ':script': run
+      post:
+        'run/:script': run
+        ':script': run
+      options:
+        '*': pass
+      all:
+        '*': disable
+    prefix: '/scripts/'
+
+  - name: models
+    routes:
+      get:
+        'test': test
+        'model': model
+        'list': list
+        'query': getquery
+        'count': getcount
+        ':key/:val': retrieve
+        ':id': get
+      post:
+        'aggregate': aggregate
+        'count': count
+        'create': create
+        'query': query
+      put:
+        ':id': getup
+        '': update
+      delete:
+        ':id': getdel
+        '': delete
+      options:
+        '*': pass
+      all:
+        '*': disable
+    middlewares:
+      - json
+      - scope
+    prefix: '/api/'
+    settings:
+      showModels: true
+      use$: true
+
+middlewares:
+  - json
+#  - scope
+
+prefix: '/api/v3/'
+settings:
+  jsonError: false
