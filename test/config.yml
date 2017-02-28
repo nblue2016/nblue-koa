@@ -10,8 +10,9 @@ database:
 
 settings:
   base: ${process.cwd()}
-  port:  8088
-  supportHttps:  false
+  port: 8088
+  supportHttps: false
+  handleExit: true
   jsonError: true
   response:
     headers:
@@ -24,13 +25,13 @@ settings:
       - "http://localhost:8080"
 
 logger:
-  file: './test/web.log'
+  file: './test/website.log'
   level: 4
   levels:
     rest: 3
 
 components:
-  - logger:
+  - name: logger
     src: 'test/components/logger.js'
   - static
   - data

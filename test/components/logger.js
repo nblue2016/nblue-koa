@@ -1,15 +1,10 @@
 // const core = require('nblue-core')
 const SuperLogger = require('../../lib/components/logger')
 
-const output = (... args) => console.log(...args)
+const C = console
+const output = (line) => C.log(line)
 
 class Logger extends SuperLogger {
-
-  constructor (napp, options) {
-    super(napp, options)
-
-    output('create')
-  }
 
   koa () {
     // assign this to that
