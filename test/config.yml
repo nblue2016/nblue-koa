@@ -12,7 +12,7 @@ settings:
   base: ${process.cwd()}
   port: 8088
   supportHttps: false
-  handleExit: true
+  handleSignal: true
   jsonError: true
   response:
     headers:
@@ -35,12 +35,12 @@ components:
     src: 'test/components/logger.js'
   - static
   - data
-#  - session
-#  - scope
+  - session
+  - scope
 
 middlewares:
   - logger
-#  - session
+  - session
 #  - hello
 
 routes:

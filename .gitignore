@@ -1,4 +1,5 @@
 node_modules/*
-*.log
-*.DS_Store
+data/*.sqlite
 test/data/*.sqlite
+*.log
+.DS_Store
