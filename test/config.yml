@@ -4,8 +4,8 @@ name:  koa configuration file
 
 database:
   connections:
-    db1:  mongodb://nblue:password@127.0.0.1:27017/nblue?authDb=nblue
-    db2:  sqlite://test/data/nblue.sqlite
+    db1: mongodb://nblue:password@127.0.0.1:27017/nblue?authDb=nblue
+    db2: sqlite://test/data/nblue.sqlite
   proxies:
 
 settings:
@@ -41,12 +41,9 @@ components:
 middlewares:
   - logger
   - session
-#  - hello
 
 routes:
   - 'test/controllers/controllers.yml'
-  #- 'test/router/script.yml'
-  #- 'test/router/models.yml'
 
 statics:
   - 'test/content'

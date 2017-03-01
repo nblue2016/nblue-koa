@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node test/start -env=dev",
-    "test": "cross-env NODE_ENV=testing node test/start"
+    "test": "cross-env NODE_ENV=test node test/start"
   },
   "repository": {
     "type": "git",
@@ -26,9 +26,9 @@
   "dependencies": {
     "co-body": "^4.2.0",
     "cross-env": "^3.1.3",
-    "koa": "^1.2.4",
+    "koa": "^1.2.5",
     "koa-router": "^5.4.0",
-    "koa-static": "^2.0.0",
+    "koa-static": "^2.1.0",
     "nblue-core": "0.0.58",
     "nblue-data": "0.0.35",
     "orm": "^3.1.0",
