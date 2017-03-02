@@ -59,10 +59,10 @@ controllers:
         'query': query
       put:
         ':id': getup
-        '': update
+        '/': update
       delete:
         ':id': getdel
-        '': delete
+        '/': delete
       options:
         '*': pass
       all:

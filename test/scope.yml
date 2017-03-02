@@ -7,11 +7,3 @@ settings:
   ignoreCase: false
   allowGuest: false
   mergeRouter: models
-
-routes: {}
-
-middlewares:
-  - json
-  - scope
-
-prefix: '/api/scope'

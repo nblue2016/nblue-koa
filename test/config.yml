@@ -6,6 +6,7 @@ database:
   connections:
     db1: mongodb://nblue:password@127.0.0.1:27017/nblue?authDb=nblue
     db2: sqlite://test/data/nblue.sqlite
+#    rabbit: amqp://localhost
   proxies:
 
 settings:
@@ -52,6 +53,14 @@ schemas:
   - 'test/models'
   - 'test/content'
 
+
 scope:
-  config: 'test/scope.yml'
+  database:
+    connection: db2
+
+  settings:
+    ignoreCase: false
+    allowGuest: false
+    mergeRouter: models
+
 ...

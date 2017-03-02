@@ -10,7 +10,7 @@ script({
       nick: 'goodman'
     }
 
-    const user = yield ctx.$execute(
+    const user = yield ctx.$pexec(
       'user',
       (adapter) => adapter.create(userData)
     )

@@ -3,6 +3,7 @@ const SuperLogger = require('../../lib/components/logger')
 
 const C = console
 const output = (line) => C.log(line)
+const HANDLER_KEY_OF_ERROR = 'error'
 
 class Logger extends SuperLogger {
 
@@ -11,7 +12,7 @@ class Logger extends SuperLogger {
     const that = this
 
     // get instance of logger
-    const logger = that.Logger
+    const logger = this.Logger
 
     return function *(next) {
       // get instance of context
@@ -36,7 +37,7 @@ class Logger extends SuperLogger {
   generateHandlers (logger) {
     super.generateHandlers(logger)
 
-    this._handlers.set('err', (err) => {
+    this._handlers.set(HANDLER_KEY_OF_ERROR, (err) => {
       logger.error(`error(${err.name}) catched`, err)
 
       output('error:')
