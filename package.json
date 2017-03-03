@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node test/start -env=dev",
-    "test": "cross-env NODE_ENV=test node test/start"
+    "test": "cross-env NODE_ENV=test node test/start",
+    "clean": "rm test/website.log \r\n clear"
   },
   "repository": {
     "type": "git",

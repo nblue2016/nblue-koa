@@ -41,7 +41,7 @@ components:
 
 middlewares:
   - logger
-  - session
+#  - session
 
 routes:
   - 'test/controllers/controllers.yml'

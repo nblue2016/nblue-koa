@@ -10,14 +10,12 @@ script({
       nick: 'goodman'
     }
 
-    /* const user = yield ctx.$pexec(
+    const user = yield ctx.$pexec(
       'user',
       (adapter) => adapter.create(userData)
-    )*/
-
-    const user = { _id: 'sdfsd' }
+    )
 
     return user._id
-  })
-  // user: (ctx) => ctx.$get(`/api/user/${ctx.newid}`)
+  }),
+  user: (ctx) => ctx.$get(`/api/user/${ctx.newid}`)
 })
