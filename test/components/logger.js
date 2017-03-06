@@ -2,7 +2,7 @@
 const core = require('nblue-core')
 
 // use classes
-const Component = require('../../lib/components/logger')
+const Component = require('../../lib/').LoggerComponent
 const C = console
 
 class Logger extends core.Logger {

@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node test/start -env=dev",
     "test": "cross-env NODE_ENV=test node test/start",
-    "clean": "rm test/website.log \r\n clear"
+    "clean": "rm test/website.log \r\n clear",
+    "reset": "npm uninstall koa koa-static koa-router"
   },
   "repository": {
     "type": "git",
@@ -25,16 +26,14 @@
     "email": "nblue2016@163.com"
   },
   "dependencies": {
-    "amqp": "^0.2.6",
     "co-body": "^4.2.0",
     "cross-env": "^3.1.3",
     "koa": "^1.2.5",
     "koa-router": "^5.4.0",
     "koa-static": "^2.1.0",
     "nblue-core": "0.0.59",
-    "nblue-data": "0.0.50",
-    "orm": "^3.2.3",
-    "sqlite": "^2.2.3"
+    "nblue-data": "0.0.51",
+    "orm": "^3.2.3"
   },
   "devDependencies": {
     "eslint": "^3.10.1"
