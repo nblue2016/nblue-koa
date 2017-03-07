@@ -1,0 +1,15 @@
+name: controller1
+src: test/controllers/controller1.js
+
+routes:
+  get:
+    '/method1': method1
+    '/method2': method2
+
+prefix: '/api/v1'
+
+middlewares:
+  - json
+
+settings:
+  jsonError: false
