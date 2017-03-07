@@ -40,14 +40,19 @@ components:
   - scope
 
 middlewares:
-  - logger
   - session
+  - scope
+  - logger
 
 routes:
+#  - 'test/controllers/controller1.yml'
   - 'test/controllers/controllers.yml'
 
 statics:
   - 'test/content'
+  - root: 'test/static'
+    options:
+      etag: false
 
 schemas:
   - 'test/models'
