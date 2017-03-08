@@ -36,12 +36,11 @@ components:
     src: 'test/components/logger.js'
   - static
   - data
-  - session
-  - scope
+#  - session
+#  - scope
 
 middlewares:
   - session
-  - scope
   - logger
 
 routes:

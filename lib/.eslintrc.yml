@@ -4,4 +4,5 @@
     no-magic-numbers: 0
     id-length: 0
     no-process-env: 0
+    object-property-newline: 0
 #    no-unused-vars: 0
