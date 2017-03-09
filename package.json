@@ -5,7 +5,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=debug node test/start --env=dev",
     "test": "cross-env NODE_ENV=test node test/start",
-    "clean": "rm test/website.log \r\n clear",
+    "clear": "rm test/website.log \r\n clear",
     "reset": "npm uninstall koa koa-static koa-router"
   },
   "repository": {

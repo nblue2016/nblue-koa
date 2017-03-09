@@ -16,10 +16,10 @@ class Logger extends core.Logger {
     if (level === 1) {
       C.log(message)
 
-      /* if (options) {
-        // C.log(options)
+      if (options) {
+        C.log(options)
         // C.log(JSON.stringify(options, null, 2))
-      } */
+      }
     }
 
     // call super method
