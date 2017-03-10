@@ -65,6 +65,7 @@ module.exports = function (app) {
       serverAddress = null
 
     before((done) => {
+      // start web server
       co(function *() {
         try {
           // start web server
@@ -285,6 +286,16 @@ module.exports = function (app) {
       catch((err) => done(err))
     })
 
-    after(() => app.stop())
+    after((done) => {
+      co(function *() {
+        try {
+          yield app.stop()
+
+          done()
+        } catch (err) {
+          done(err)
+        }
+      })
+    })
   })
 }

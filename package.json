@@ -32,7 +32,6 @@
   "dependencies": {
     "co-body": "^4.2.0",
     "cross-env": "^3.1.3",
-    "express": "^4.15.2",
     "nblue-core": "0.0.59",
     "nblue-data": "0.0.52",
     "orm": "^3.2.3"

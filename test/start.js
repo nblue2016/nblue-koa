@@ -1,5 +1,6 @@
+const nblue = require('../lib')
 // const Application = require('../lib').Express
-const Application = require('../lib').Koa
+// const Application = require('../lib').Koa
 const Constants = require('../lib').Constants
 
 const C = console
@@ -9,8 +10,16 @@ const opts = {
   autoInstall: true
 }
 
+let App = nblue.Koa
+
+if (process.argv.includes('express')) {
+  App = nblue.Express
+} else if (process.argv.includes('koa2')) {
+  App = nblue.Koa2
+}
+
 // const app = new Koa()
-const napp = new Application(opts)
+const napp = new App(opts)
 
 napp.on(Constants.EventOfServerCreate,
   () => {
@@ -39,7 +48,7 @@ napp.on(Constants.EventOfServerStop,
 
 napp.on(Constants.EventOfServerExit,
   () => {
-    C.log(`${napp.ServerType} exit.`)
+    C.log(`${napp.ServerType} exit.\r\n`)
   })
 
 napp.start()
