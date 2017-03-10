@@ -4,9 +4,13 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=debug node test/start --env=dev",
-    "test": "cross-env NODE_ENV=test node test/start",
-    "clear": "rm test/website.log \r\n clear",
-    "reset": "npm uninstall koa koa-static koa-router"
+    "test": "mocha test/test --env=test",
+    "clear": "rm test/website.log \r\n npm cache clear\r\nclear",
+    "remove:koa": "npm uninstall koa koa-static koa-router",
+    "remove:express": "npm uninstall express",
+    "install:koa": "npm install koa@1 koa-static@2.1 koa-router",
+    "install:koa2": "npm install koa@2 koa-static@3 koa-router",
+    "install:express": "npm install express"
   },
   "repository": {
     "type": "git",
@@ -29,11 +33,8 @@
     "co-body": "^4.2.0",
     "cross-env": "^3.1.3",
     "express": "^4.15.2",
-    "koa": "^1.2.5",
-    "koa-router": "^5.4.0",
-    "koa-static": "^2.1.0",
     "nblue-core": "0.0.59",
-    "nblue-data": "0.0.51",
+    "nblue-data": "0.0.52",
     "orm": "^3.2.3"
   },
   "devDependencies": {

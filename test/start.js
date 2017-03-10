@@ -1,27 +1,45 @@
-const Application = require('../lib').Express
-// const Application = require('../lib').Koa
+// const Application = require('../lib').Express
+const Application = require('../lib').Koa
 const Constants = require('../lib').Constants
 
 const C = console
 
+const opts = {
+  configFile: `${process.cwd()}/test/config.yml`,
+  autoInstall: true
+}
+
 // const app = new Koa()
-const napp = new Application()
+const napp = new Application(opts)
 
-napp.on(Constants.EventOfServerInitialized,
+napp.on(Constants.EventOfServerCreate,
   () => {
-    C.log(`${napp.ServerType} initialized`)
+    C.log(`${napp.ServerType} create`)
   })
 
-napp.on(Constants.EventOfServerUsed,
+napp.on(Constants.EventOfServerInitializ,
   () => {
-    C.log(`${napp.ServerType} used`)
+    C.log(`${napp.ServerType} initialize.`)
   })
 
-napp.on(Constants.EventOfServerRouted,
+napp.on(Constants.EventOfServerUse,
   () => {
-    C.log(`${napp.ServerType} routed`)
+    C.log(`${napp.ServerType} use.`)
   })
 
-napp.start({
-  configFile: `${process.cwd()}/test/config.yml`
-})
+napp.on(Constants.EventOfServerRout,
+  () => {
+    C.log(`${napp.ServerType} route.`)
+  })
+
+napp.on(Constants.EventOfServerStop,
+  () => {
+    C.log(`${napp.ServerType} stop.`)
+  })
+
+napp.on(Constants.EventOfServerExit,
+  () => {
+    C.log(`${napp.ServerType} exit.`)
+  })
+
+napp.start()

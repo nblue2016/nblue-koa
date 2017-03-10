@@ -40,7 +40,7 @@ components:
   - scope
 
 middlewares:
-  - session
+#  - session
   - logger
 
 routes:

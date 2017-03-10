@@ -7,5 +7,6 @@
     no-process-env: 0
     no-underscore-dangle: 0
     id-length: 0
+    max-statements: 0
 
 #    no-unused-vars: 0

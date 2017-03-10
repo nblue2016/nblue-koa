@@ -42,6 +42,9 @@ controllers:
       all:
         '/*': disable
     prefix: '/scripts'
+    middlewares:
+      - json
+      - scope
 
   - name: models
     routes:
@@ -78,7 +81,7 @@ controllers:
 
 middlewares:
   - json
-  - scope
+#  - scope
 
 prefix: '/api/v3'
 settings:
