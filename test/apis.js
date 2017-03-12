@@ -148,7 +148,7 @@ module.exports = function (app) {
     })
 
     it('model rest apis', function (done) {
-      this.timeout(5000)
+      this.timeout(12000)
 
       let
         rt = null,

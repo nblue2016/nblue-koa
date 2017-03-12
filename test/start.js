@@ -1,6 +1,4 @@
 const nblue = require('../lib')
-// const Application = require('../lib').Express
-// const Application = require('../lib').Koa
 const Constants = require('../lib').Constants
 
 const C = console
@@ -10,45 +8,50 @@ const opts = {
   autoInstall: true
 }
 
-let App = nblue.Koa
+let App = null
 
 if (process.argv.includes('express')) {
   App = nblue.Express
+} else if (process.argv.includes('koa')) {
+  App = nblue.Koa
 } else if (process.argv.includes('koa2')) {
   App = nblue.Koa2
+} else {
+  // default use koa
+  App = nblue.Koa
 }
 
 // const app = new Koa()
-const napp = new App(opts)
+const app = new App(opts)
 
-napp.on(Constants.EventOfServerCreate,
+app.on(Constants.EventOfServerCreate,
   () => {
-    C.log(`${napp.ServerType} create`)
+    C.log(`${app.ServerType} create`)
   })
 
-napp.on(Constants.EventOfServerInitializ,
+app.on(Constants.EventOfServerInitializ,
   () => {
-    C.log(`${napp.ServerType} initialize.`)
+    C.log(`${app.ServerType} initialize.`)
   })
 
-napp.on(Constants.EventOfServerUse,
+app.on(Constants.EventOfServerUse,
   () => {
-    C.log(`${napp.ServerType} use.`)
+    C.log(`${app.ServerType} use.`)
   })
 
-napp.on(Constants.EventOfServerRout,
+app.on(Constants.EventOfServerRout,
   () => {
-    C.log(`${napp.ServerType} route.`)
+    C.log(`${app.ServerType} route.`)
   })
 
-napp.on(Constants.EventOfServerStop,
+app.on(Constants.EventOfServerStop,
   () => {
-    C.log(`${napp.ServerType} stop.`)
+    C.log(`${app.ServerType} stop.`)
   })
 
-napp.on(Constants.EventOfServerExit,
+app.on(Constants.EventOfServerExit,
   () => {
-    C.log(`${napp.ServerType} exit.\r\n`)
+    C.log(`${app.ServerType} exit.\r\n`)
   })
 
-napp.start()
+app.start()
