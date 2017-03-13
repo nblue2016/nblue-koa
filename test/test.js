@@ -18,6 +18,7 @@ describe('server', () => {
         catch((err) => done(err))
     })
 
+    require('./static')(app)
     require('./apis')(app)
   }
 })

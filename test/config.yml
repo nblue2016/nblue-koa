@@ -27,7 +27,7 @@ settings:
 
 logger:
   file: './test/website.log'
-  level: 2
+  level: 4
   levels:
     rest: 3
 
@@ -41,7 +41,7 @@ components:
   - scope
 
 middlewares:
-  - session
+#  - session
   - logger
 
 routes:
@@ -61,6 +61,9 @@ schemas:
 session:
   database:
     connection: db1
+  settings:
+    expire: 12000
+    encode: false
 
 scope:
   database:
