@@ -49,9 +49,11 @@ app.on(Constants.EventOfServerStop,
     C.log(`${app.ServerType} stop.`)
   })
 
+// catch event
 app.on(Constants.EventOfServerExit,
   () => {
     C.log(`${app.ServerType} exit.\r\n`)
   })
 
+// start nblue application
 app.start()

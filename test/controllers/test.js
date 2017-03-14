@@ -9,22 +9,22 @@ class TestRouter extends Controller {
     })
   }
 
-  method1 () {
-    return function *() {
-      const ctx = this
+  // methods for koa
+  *test () {
+    const ctx = this
 
-      ctx.body = { name: 'method1' }
+    ctx.body = { name: 'method1' }
 
-      yield Promise.resolve()
-    }
+    yield Promise.resolve()
   }
 
-  method2 () {
-    return function () {
-      const ctx = this
+  k2test (ctx) {
+    ctx.type = 'json'
+    ctx.body = { name: 'method1' }
+  }
 
-      ctx.body = { name: 'method2' }
-    }
+  etest (req, res) {
+    res.status(200).json({ name: 'method1' })
   }
 
 }

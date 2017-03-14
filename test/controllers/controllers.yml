@@ -23,10 +23,9 @@ controllers:
     src: test/controllers/test.js
     routes:
       get:
-        '/test2': pass
         '/ls': ls
-        '/method1': method1
-        '/method2': method2
+        '/pass': pass
+        '/test': test
 
   - name: script
     base: 'test/scripts'

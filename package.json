@@ -12,7 +12,7 @@
     "remove:koa": "npm uninstall koa koa-static koa-router",
     "remove:express": "npm uninstall express cookie-parser",
     "install:koa": "npm install koa@1 koa-static@2.1 koa-router",
-    "install:koa2": "npm install koa@2 koa-static@3 koa-router",
+    "install:koa2": "npm install koa@2 koa-static@3 koa-router@7",
     "install:express": "npm install express cookie-parser",
     "install:data": "npm install mongodb orm sqlite3 mysql"
   },

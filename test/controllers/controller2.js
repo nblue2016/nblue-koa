@@ -52,6 +52,28 @@ class Controller2 extends Controller {
     }
   }
 
+  k2method1 () {
+    return function (ctx) {
+      ctx.body = {
+        a: 'm1',
+        b: 1,
+        c: 2
+      }
+      ctx.type = 'json'
+    }
+  }
+
+  k2method2 () {
+    return function (ctx) {
+      ctx.body = {
+        a: 'm2',
+        b: 2,
+        c: 2
+      }
+      ctx.type = 'json'
+    }
+  }
+
 }
 
 module.exports = Controller2
