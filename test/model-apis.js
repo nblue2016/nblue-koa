@@ -74,7 +74,10 @@ module.exports = function (app, model) {
       assert.ok(rt, 'OPTIONS::/PASS')
     }).
     then(() => done()).
-    catch((err) => done(err))
+    catch((err) => {
+      // console.log(err)
+      done(err)
+    })
   })
 
   it(`${model} - GET::/test`, (done) => {
