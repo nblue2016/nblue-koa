@@ -5,7 +5,7 @@ const co = core.co
 
 const headers = {
   'context-type': 'application/json',
-  scope: 'admin'
+  scope: 'modelR, postRW, userRW'
 }
 
 const getCreatedBody = (model) => {

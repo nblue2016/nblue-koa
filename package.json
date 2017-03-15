@@ -1,5 +1,5 @@
 {
-  "name": "nblue-koa",
+  "name": "nblue",
   "description": "nblue middlewares of Koa",
   "main": "index.js",
   "scripts": {

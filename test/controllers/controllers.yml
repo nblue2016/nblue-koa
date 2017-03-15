@@ -8,6 +8,9 @@ controllers:
         '/method1': method1
         '/method2': method2
     prefix: '/api/v1'
+    middlewares:
+      - json
+      - scope
 
   - name: controller2
     src: test/controllers/controller2.js
@@ -57,7 +60,12 @@ controllers:
         '/:id': get
       post:
         '/aggregate': aggregate
-        '/count': count
+        '/count':
+          method: count
+          middlewares:
+            - name: scope
+              options:
+                allow: ${model}RW
         '/create': create
         '/query': query
       put:
@@ -72,7 +80,9 @@ controllers:
         '/*': disable
     middlewares:
       - json
-      - scope
+      - name: scope
+        options:
+          allow: modelR
     prefix: '/api'
     settings:
       showModels: true
