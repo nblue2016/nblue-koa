@@ -6,8 +6,7 @@ database:
   connections:
     db1: mongodb://nblue:password@127.0.0.1:27017/nblue?authDb=nblue
     db2: sqlite://test/data/nblue.sqlite
-    rabbit: amqp://localhost
-    session: redis://localhost/1
+    session: redis://localhost/3?lazyConnect=true
   proxies:
 
 settings:
@@ -24,7 +23,7 @@ settings:
       Access-Control-Allow-Origin: "unknown"
       Access-Control-Max-Age: "3628800"
     origins:
-      - "http://localhost:8080"
+      - "http://localhost:8088"
 
 logger:
   file: './test/website.log'
@@ -38,9 +37,7 @@ components:
   - static
   - cache
   - data
-  - name: session
-    options:
-      redis: true
+  - session?redis=true
   - scope
 
 middlewares:
@@ -64,6 +61,7 @@ schemas:
 session:
   database:
     connection: session
+#    connection: redis://localhost/3?lazyConnect=true
   settings:
     expire: 1200000
     encode: false
