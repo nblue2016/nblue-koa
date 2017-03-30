@@ -7,6 +7,7 @@ database:
     db1: mongodb://nblue:password@127.0.0.1:27017/nblue?authDb=nblue
     db2: sqlite://test/data/nblue.sqlite
     rabbit: amqp://localhost
+    session: redis://localhost/1
   proxies:
 
 settings:
@@ -37,11 +38,13 @@ components:
   - static
   - cache
   - data
-  - session
+  - name: session
+    options:
+      redis: true
   - scope
 
 middlewares:
-#  - session
+  - session
   - logger
 
 routes:
@@ -60,9 +63,9 @@ schemas:
 
 session:
   database:
-    connection: db1
+    connection: session
   settings:
-    expire: 12000
+    expire: 1200000
     encode: false
 
 scope:
