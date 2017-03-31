@@ -11,7 +11,9 @@ const redis = new Redis(url)
 const gen = function *() {
   yield redis.set('test', 'ok1')
 
-  yield redis.hset('fields', 'key1', 'ok2')
+  yield redis.hset('fields', 'key1', 'v1')
+  yield redis.hset('fields', 'key2', 'v2')
+  yield redis.hset('fields', 'key3', 'v3')
 
   const v1 = yield redis.get('test')
 
@@ -21,11 +23,14 @@ const gen = function *() {
 
   const v4 = yield redis.exists('fields2')
 
+  const v5 = yield redis.hgetall('fields')
+
   const output = {
     v1,
     v2,
     v3,
-    v4
+    v4,
+    v5
   }
 
   C.log(output)
