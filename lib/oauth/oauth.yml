@@ -1,0 +1,22 @@
+server:
+  p: a
+  scope: null
+  addAcceptedScopesHeader: true
+  addAuthorizedScopesHeader: true
+  allowBearerTokensInQueryString: false
+
+request:
+  headers: null
+
+response:
+  headers: null
+
+routes:
+  get:
+    '/authenticate': 'authenticate'
+    '/authorize': 'authorize'
+    '/token': 'token'
+  post:
+    '/authenticate': 'authenticate'
+    '/authorize': 'authorize'
+    '/token': 'token'

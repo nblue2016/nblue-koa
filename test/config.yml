@@ -9,6 +9,10 @@ database:
     session: redis://localhost/3?lazyConnect=true
   proxies:
 
+schemas:
+  - 'test/models'
+  - 'test/content'
+
 settings:
   base: ${process.cwd()}
   port: 8088
@@ -39,6 +43,9 @@ components:
   - data
   - session?redis=true
   - scope
+  - name: oauth
+    src: 'lib/oauth/component'
+    config: 'lib/oauth/config.yml'
 
 middlewares:
   - session
@@ -53,10 +60,6 @@ statics:
   - root: 'test/static'
     options:
       etag: false
-
-schemas:
-  - 'test/models'
-  - 'test/content'
 
 session:
   database:
@@ -75,4 +78,7 @@ scope:
     allowGuest: false
     mergeRouter: models
 
+oauth:
+  test: 'v1'
+  test2: 'v2'
 ...
