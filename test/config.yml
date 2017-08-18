@@ -45,15 +45,12 @@ components:
   - scope
   - name: oauth
     src: 'lib/oauth/component'
-    config: 'lib/oauth/config.yml'
 
 middlewares:
   - session
   - logger
 
-routes:
-#  - 'test/controllers/controller1.yml'
-  - 'test/controllers/controllers.yml'
+routes: 'test/controllers/controllers.yml'
 
 statics:
   - 'test/content'

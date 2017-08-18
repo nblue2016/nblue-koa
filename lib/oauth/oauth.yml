@@ -1,5 +1,10 @@
+database:
+  connections:
+    # oauth: 'sqlite://test/data/oauth.sqlite'
+    oauth: mongodb://oauth:password@127.0.0.1:27017/oauth?authDb=oauth
+  proxies:
+
 server:
-  p: a
   scope: null
   addAcceptedScopesHeader: true
   addAuthorizedScopesHeader: true
@@ -11,12 +16,15 @@ request:
 response:
   headers: null
 
-routes:
-  get:
-    '/authenticate': 'authenticate'
-    '/authorize': 'authorize'
-    '/token': 'token'
-  post:
-    '/authenticate': 'authenticate'
-    '/authorize': 'authorize'
-    '/token': 'token'
+controllers:
+  name: oauth
+  routes:
+    get:
+      '/authenticate': 'authenticate'
+      '/authorize': 'authorize'
+      '/token': 'token'
+    post:
+      '/authenticate': 'authenticate'
+      '/authorize': 'authorize'
+      '/token': 'token'
+  prefix: '/oauth'
