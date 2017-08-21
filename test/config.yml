@@ -50,7 +50,8 @@ middlewares:
   - session
   - logger
 
-routes: 'test/controllers/controllers.yml'
+controllers:
+  - 'test/controllers/controllers.yml'
 
 statics:
   - 'test/content'

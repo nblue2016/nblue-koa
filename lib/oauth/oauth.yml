@@ -20,6 +20,7 @@ controllers:
   name: oauth
   routes:
     get:
+      '/test': 'test'
       '/authenticate': 'authenticate'
       '/authorize': 'authorize'
       '/token': 'token'

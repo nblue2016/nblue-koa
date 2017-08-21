@@ -10,12 +10,14 @@ class TestRouter extends Controller {
   }
 
   // methods for koa
-  *test () {
-    const ctx = this
+  ktest () {
+    return function *() {
+      const ctx = this
 
-    ctx.body = { name: 'method1' }
+      ctx.body = { name: 'method1' }
 
-    yield Promise.resolve()
+      yield Promise.resolve()
+    }
   }
 
   k2test (ctx) {
