@@ -21,6 +21,7 @@ controllers:
   routes:
     get:
       '/test': 'test'
+      '/bad': 'bad'
       '/authenticate': 'authenticate'
       '/authorize': 'authorize'
       '/token': 'token'
