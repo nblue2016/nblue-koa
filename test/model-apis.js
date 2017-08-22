@@ -75,7 +75,6 @@ module.exports = function (app, model) {
     }).
     then(() => done()).
     catch((err) => {
-      // console.log(err)
       done(err)
     })
   })

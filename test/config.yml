@@ -52,6 +52,13 @@ middlewares:
 
 controllers:
   - 'test/controllers/controllers.yml'
+  - name: test
+    src: test/controllers/test.js
+    routes:
+      get:
+        '/ls': ls
+        '/pass': pass
+        '/test': test
 
 statics:
   - 'test/content'

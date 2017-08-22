@@ -22,14 +22,6 @@ controllers:
         '/method2': method2
     prefix: '/api/v2'
 
-  - name: test
-    src: test/controllers/test.js
-    routes:
-      get:
-        '/ls': ls
-        '/pass': pass
-        '/test': test
-
   - name: script
     base: 'test/scripts'
     routes:
