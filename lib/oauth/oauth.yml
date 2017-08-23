@@ -11,20 +11,21 @@ server:
   allowBearerTokensInQueryString: false
 
 request:
-  headers: null
+  headers: {}
+  method: "get"
+  query: ""
 
 response:
   headers: null
 
 controllers:
   name: oauth
+  middlewares:
+    - form
   routes:
     get:
       '/test': 'test'
       '/bad': 'bad'
-      '/authenticate': 'authenticate'
-      '/authorize': 'authorize'
-      '/token': 'token'
     post:
       '/authenticate': 'authenticate'
       '/authorize': 'authorize'
