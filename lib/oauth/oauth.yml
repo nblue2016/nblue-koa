@@ -26,8 +26,8 @@ controllers:
     get:
       '/test': 'test'
       '/bad': 'bad'
+      '/authorize': 'authorize'
     post:
       '/authenticate': 'authenticate'
-      '/authorize': 'authorize'
       '/token': 'token'
   prefix: '/oauth'
