@@ -24,10 +24,8 @@ controllers:
     - form
   routes:
     get:
-      '/test': 'test'
-      '/bad': 'bad'
+      '/authenticate': 'authenticate'
       '/authorize': 'authorize'
     post:
-      '/authenticate': 'authenticate'
       '/token': 'token'
   prefix: '/oauth'
