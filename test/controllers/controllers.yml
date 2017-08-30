@@ -46,30 +46,30 @@ controllers:
         '/test': test
         '/model': model
         '/list': list
-        '/query': getquery
-        '/count': getcount
-        '/:key/:val': retrieve
-        '/:id': get
+#        '/query': getquery
+#        '/count': getcount
+#        '/:key/:val': retrieve
+#        '/:id': get
       post:
-        '/aggregate': aggregate
-        '/count':
-          method: count
-          middlewares:
-            - name: scope
-              options:
-                allow: ${model}RW
-        '/create': create
-        '/query': query
+#        '/aggregate': aggregate
+#        '/count':
+#          method: count
+#          middlewares:
+#            - name: scope
+#              options:
+#                allow: ${model}RW
+#        '/create': create
+#        '/query': query
       put:
-        '/:id': getup
-        '/': update
+#        '/:id': getup
+#        '/': update
       delete:
-        '/:id': getdel
-        '/': delete
+#        '/:id': getdel
+#        '/': delete
       options:
         '/*': pass
       all:
-        '/*': disable
+#        '/*': disable
     middlewares:
       - json
       - name: scope
