@@ -99,6 +99,7 @@ module.exports = function (app) {
         assert.ok(rt, 'GET::/scripts/test2')
         assert.equal(rt.r1, 5, 'GET::/scripts/test2')
 
+
         url = `${serverAddress}/scripts/test2?a1=545`
         rt = yield aq.rest(url, 'POST', headers)
         assert.ok(rt, 'GET::/scripts/test2')

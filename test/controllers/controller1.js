@@ -10,8 +10,6 @@ class Controller1 extends Controller {
         c: 1
       }
     })
-
-    // return this.generateResponse()
   }
 
   method2 (ctx) {
@@ -22,12 +20,6 @@ class Controller1 extends Controller {
         c: 1
       }
     })
-
-    /* return this.generateResponse({
-      a: 'm2',
-      b: 2,
-      c: 1
-    }) */
   }
 
 }
