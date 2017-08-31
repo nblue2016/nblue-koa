@@ -3,7 +3,7 @@ const Controller = require('../../lib/').Controller
 class TestRouter extends Controller {
 
   ls (ctx) {
-    this.respond(ctx, { body: {
+    ctx.respond({ body: {
       method: 'ls',
       args: [1, 2, 3]
     } })
@@ -15,7 +15,7 @@ class TestRouter extends Controller {
   }
 
   test (ctx) {
-    this.respond(ctx, { body: { name: 'method1' } })
+    ctx.respond({ body: { name: 'method1' } })
   }
 
 }

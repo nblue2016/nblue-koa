@@ -25,7 +25,7 @@ class Controller2 extends Controller {
   }
 
   method1 (ctx) {
-    ctx.respond(ctx, {
+    ctx.respond({
       body: {
         a: 'm1',
         b: 1,
@@ -36,7 +36,7 @@ class Controller2 extends Controller {
   }
 
   method2 (ctx) {
-    ctx.respond(ctx, {
+    ctx.respond({
       body: {
         a: 'm2',
         b: 2,

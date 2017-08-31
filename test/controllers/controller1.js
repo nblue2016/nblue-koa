@@ -3,7 +3,7 @@ const Controller = require('../../lib/').Controller
 class Controller1 extends Controller {
 
   method1 (ctx) {
-    return this.respond(ctx, {
+    return ctx.respond({
       body: {
         a: 'm1',
         b: 2,
@@ -13,7 +13,7 @@ class Controller1 extends Controller {
   }
 
   method2 (ctx) {
-    return this.respond(ctx, {
+    return ctx.respond({
       body: {
         a: 'm1',
         b: 2,
