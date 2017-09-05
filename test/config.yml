@@ -36,16 +36,17 @@ logger:
     rest: 3
 
 components:
-#  - name: logger
-#    src: 'test/components/logger.js'
-  - logger
+  - name: logger
+    src: 'test/components/logger.js'
+#  - logger
   - static
   - cache
   - data
 #  - session?redis=true
 #  - scope
-#  - name: oauth
-#    src: 'lib/oauth/component'
+  - name: oauth
+    src: 'lib/oauth/component'
+    # config: 'oauth.yml'
 
 middlewares:
   - session
@@ -66,11 +67,12 @@ controllers:
         '/empty': empty
         '/test': test
 
-statics:
-  - 'test/content'
-  - root: 'test/static'
-    options:
-      etag: false
+static:
+  paths:
+    - 'test/content'
+    - root: 'test/static'
+      options:
+        etag: false
 
 session:
   database:

@@ -1,47 +1,43 @@
 const Controller = require('../../lib/').Controller
 
+const Body1 = {
+  a: 'm1',
+  b: 1,
+  c: 2
+}
+
+const Body2 = {
+  a: 'm2',
+  b: 2,
+  c: 2
+}
+
 class Controller2 extends Controller {
 
   emethod1 () {
     return (req, res) => {
       res.type('json')
-      res.send({
-        a: 'm1',
-        b: 1,
-        c: 2
-      })
+      res.send(Body1)
     }
   }
 
   emethod2 () {
     return (req, res) => {
       res.type('json')
-      res.send({
-        a: 'm2',
-        b: 2,
-        c: 2
-      })
+      res.send(Body2)
     }
   }
 
   method1 (ctx) {
     ctx.respond({
-      body: {
-        a: 'm1',
-        b: 1,
-        c: 2
-      },
+      body: Body1,
       type: 'json'
     })
   }
 
   method2 (ctx) {
     ctx.respond({
-      body: {
-        a: 'm2',
-        b: 2,
-        c: 2
-      },
+      body: Body2,
       type: 'json'
 
     })

@@ -25,7 +25,9 @@ module.exports = function (app) {
 
     it('static page(test.html)', (done) => {
       co(function *() {
-        const rt = yield aq.rest(`${serverAddress}/test.html`, 'GET')
+        const url = `${serverAddress}/test.html`
+
+        const rt = yield aq.rest(url, 'GET')
 
         assert.ok(rt, 'static page')
       }).
