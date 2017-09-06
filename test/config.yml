@@ -46,7 +46,7 @@ components:
 #  - scope
   - name: oauth
     src: 'lib/oauth/component'
-    # config: 'oauth.yml'
+#   config: 'oauth.yml'
 
 middlewares:
   - session
