@@ -42,7 +42,8 @@ components:
   - static
   - cache
   - data
-#  - session?redis=true
+#  - session
+  - session?redis=true
 #  - scope
   - name: oauth
     src: 'lib/oauth/component'

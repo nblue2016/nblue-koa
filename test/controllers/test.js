@@ -10,7 +10,6 @@ class TestRouter extends Controller {
   }
 
   hello () {
-    // return this.generateResponse('O')
     return null
   }
 
