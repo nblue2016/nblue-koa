@@ -10,7 +10,7 @@ controllers:
     prefix: '/api/v1'
     middlewares:
       - json
-      - scope
+#      - scope
 
   - name: controller2
     src: test/controllers/controller2.js
@@ -38,7 +38,7 @@ controllers:
     prefix: '/scripts'
     middlewares:
       - json
-      - scope
+#      - scope
 
   - name: models
     routes:
@@ -55,9 +55,9 @@ controllers:
         '/count':
           method: count
           middlewares:
-            - name: scope
-              options:
-                allow: ${model}RW
+#            - name: scope
+#              options:
+#                allow: ${model}RW
         '/create': create
         '/query': query
       put:
@@ -72,9 +72,9 @@ controllers:
         '/*': disable
     middlewares:
       - json
-      - name: scope
-        options:
-          allow: modelR
+#      - name: scope
+#        options:
+#          allow: modelR
     prefix: '/api'
     settings:
       showModels: true
