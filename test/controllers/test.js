@@ -14,6 +14,7 @@ class TestRouter extends Controller {
   }
 
   test (ctx) {
+    if (ctx.session) ctx.session.id = '555'
     ctx.respond({ body: { name: 'method1' } })
   }
 

@@ -44,7 +44,7 @@ components:
   - data
 #  - session
   - session?redis=true
-#  - scope
+  - scope
   - name: oauth
     src: 'lib/oauth/component'
 #   config: 'oauth.yml'
@@ -84,6 +84,7 @@ session:
     encode: false
 
 scope:
+  config: 'test/scope.yml'
   database:
     connection: db2
 
