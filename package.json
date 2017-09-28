@@ -3,18 +3,19 @@
   "description": "nblue middlewares of Koa",
   "main": "index.js",
   "scripts": {
+    "clear": "rm test/website.log \r\nnpm cache clear\r\nclear",
+    "clear:win": "rm test/website.log \r\nnpm cache clear\r\ncls",
+    "install:data": "npm install mongodb orm sqlite3 mysql",
+    "install:express": "npm install express cookie-parser",
+    "install:koa": "npm install koa@1 koa-static@2.1 koa-router",
+    "install:koa2": "npm install koa@2 koa-static@3 koa-router@7",
+    "remove:express": "npm uninstall express cookie-parser",
+    "remove:koa": "npm uninstall koa koa-static koa-router",
     "start": "cross-env NODE_ENV=debug node test/start --env=dev",
     "start:express": "npm start express",
     "start:koa": "npm start koa",
     "start:koa2": "npm start koa2",
-    "test": "mocha test/test --env=test",
-    "clear": "rm test/website.log \r\nnpm cache clear\r\nclear",
-    "remove:koa": "npm uninstall koa koa-static koa-router",
-    "remove:express": "npm uninstall express cookie-parser",
-    "install:koa": "npm install koa@1 koa-static@2.1 koa-router",
-    "install:koa2": "npm install koa@2 koa-static@3 koa-router@7",
-    "install:express": "npm install express cookie-parser",
-    "install:data": "npm install mongodb orm sqlite3 mysql"
+    "test": "mocha test/test --env=test"
   },
   "repository": {
     "type": "git",
