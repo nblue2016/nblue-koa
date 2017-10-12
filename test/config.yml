@@ -94,6 +94,8 @@ scope:
     mergeRouter: models
 
 oauth:
-  test: 'v1'
-  test2: 'v2'
+  server:
+    addAcceptedScopesHeader: true
+    addAuthorizedScopesHeader: true
+    accessTokenLifetime: 8000
 ...

@@ -7,6 +7,7 @@ database:
 server:
   addAcceptedScopesHeader: true
   addAuthorizedScopesHeader: true
+  accessTokenLifetime: 6000
   allowBearerTokensInQueryString: false
 
 request:
