@@ -5,6 +5,7 @@ database:
   proxies:
 
 server:
+  allowEmptyState: true
   addAcceptedScopesHeader: true
   addAuthorizedScopesHeader: true
   accessTokenLifetime: 6000
